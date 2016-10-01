@@ -1,0 +1,23 @@
+{
+  "name": "marta be free",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ollebsson/Be-free.git"
+  },
+  "author": "Olle Bengtsson, Marta Dell Anna",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/ollebsson/Be-free.git",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+  }
+}

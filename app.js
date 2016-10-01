@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
-app.engine('handlebars', handlebars.engine);
+// app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.static(__dirname + "/public"));
@@ -23,8 +23,8 @@ app.get('/', function (req, res) {
 });
 
 
-var server = app.listen(3000, function () {
-	console.log('Server started. Listening to connections on port 3000\n');
+var server = app.listen(8080, function () {
+	console.log('Server started. Listening to connections on port 8080\n');
 });
 
 module.exports = app;
