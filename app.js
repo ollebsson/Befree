@@ -10,7 +10,7 @@ var router = express.Router();
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-app.use('/:id', router);
+app.use('/sayHello', router);
 
 router.post('/', handleSayHello);
 
