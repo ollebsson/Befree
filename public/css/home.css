@@ -147,6 +147,7 @@ img {
 #submit {
 	font-family: helloGoodbye;
 	box-shadow: 5px 5px 20px #bcbcbc;
+	font-size: 2.125rem;
 }
 .column {
 	text-align: center;
@@ -174,10 +175,6 @@ img {
     color: #555;
     background-color: transparent !important;
     text-decoration: underline;	
-}
-#nav-btn {
-/*	margin-top: 20px;
-	margin-bottom: 20px;*/
 }
 .paragraph {
 	font-family: bellCustom;
@@ -350,6 +347,3 @@ span {
 	text-align: center;
 	background-size: contain;
 };
-#kontakt {
-	/*margin-bottom: 30px;*/
-}
