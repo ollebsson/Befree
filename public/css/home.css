@@ -344,3 +344,9 @@ span {
 .table {
 	margin-top: 30px;
 }
+#bubble {
+	z-index: 200;
+	position: absolute;
+	text-align: center;
+	background-size: contain;
+}

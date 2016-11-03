@@ -9,6 +9,9 @@ $(function() {
 	var navbarBrand = document.getElementById('navbar-brand');
 	var swe = document.getElementById('swe');
 	var eng = document.getElementById('eng');
+	var modal = document.getElementById('myModal');
+	var modal2 = document.getElementById('myModal-2');
+	var modal3 = document.getElementById('myModal-3');
 	var viewPort = {
 		width: $(window).width(),
 		height: $(window).height()
@@ -223,7 +226,15 @@ $(function() {
 			changeNavOnScrollDown();
 		}
 	});
-	
+	modal.addEventListener('click', function() {
+		$('#myModal').modal('toggle');
+	})	
+	modal2.addEventListener('click', function() {
+		$('#myModal-2').modal('toggle');
+	})
+	modal3.addEventListener('click', function() {
+		$('#myModal-3').modal('toggle');
+	})
 	navbar.addEventListener('click', function (ev) {
 		
 		if(ev.target.tagName === 'A' ) {
