@@ -181,7 +181,7 @@ img {
 }
 .paragraph {
 	font-family: bellCustom;
-	/*margin-bottom: 100px;*/
+	margin-bottom: 40px;
 	padding-top: 163px;
 	font-size: 1.875rem;
 }
@@ -342,11 +342,14 @@ span {
 	text-align: end;
 }
 .table {
-	margin-top: 30px;
+	margin-top: 25px;
 }
 #bubble {
 	z-index: 200;
 	position: absolute;
 	text-align: center;
 	background-size: contain;
+};
+#kontakt {
+	/*margin-bottom: 30px;*/
 }
