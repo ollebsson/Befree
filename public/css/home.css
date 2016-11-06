@@ -21,7 +21,7 @@
 
 /*               LOGO            */
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
 
 	#navs {
 
@@ -32,7 +32,7 @@
 		top: 50%;
 	}
 	#navbar {
-		padding: 85px;
+		/*padding: 85px;*/
 	}
 	.start-left-column {
 		padding-right: 0px;
@@ -94,9 +94,14 @@ img {
  	transition: opacity 0.5s linear;
 }
 #logo-small {
-
+	width: 100px;
  	opacity: 0;
  	transition: opacity 0.5s linear;
+}
+@media(max-width: 700px) {
+	#logo-small {
+		width: 80px;
+	}
 }
 .image {
  	margin-top: 35px;
@@ -403,7 +408,7 @@ span {
 .bubble-text {
 	position: absolute !important;
 	text-align: center;
-	margin-top: -24px;
+	margin-top: -68px;
 }
 .bread-divider {
 	margin-bottom: 114px;
@@ -458,4 +463,9 @@ span {
 }
 #adress {
 	margin: 0px;
+}
+.img-wrapper {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
