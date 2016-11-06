@@ -214,19 +214,7 @@ textarea {
 #modal-inner i {
 	/*font-size: 1.425rem;*/
 }
-#modal-inner-mobile {
-/*	left: 50%;
-	top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-	background-color: transparent;*/
-	text-align: center;
-	background-repeat: no-repeat;
-    height: 100%;
-    background-size: contain;
-    padding-top: 50px;
-    padding-right: 76px;
-}
+
 @media (max-width: 700px) {
 	#modal-inner {
 		background-size: contain;
@@ -257,7 +245,6 @@ h1 {
 	margin-bottom: 30px !important;
 }
 .bread {
-	
 	transition: ease-out 0.2s;
 	margin-top: 50px;
 }
@@ -312,23 +299,47 @@ img {
 	max-width: 100%;
 }
 #breads {
-	margin-top: 30px;
+	max-width: 100%;
 }
 .lb {
 	max-width: 100%;
+	font-family: angeline;
+	line-height: 9rem;
+}
+@media(min-width: 1000px) {
+	#go-lb {
+		opacity: 0;
+		transition: ease 1s;
+		left: -30%;
+	}
+	#super-lb {
+		opacity: 0;
+		transition: ease 1s;
+		left: -30%;
+	}
+	#sur-lb {
+		opacity: 0;
+		transition: ease 1s;
+		left: -30%;
+	}
+/*	.labels {
+		position: absolute !important;
+		left: 20%;
+		transition: ease 1s;
+	}*/
 }
 .bee {
 	margin-top: -1px;
 		
 }
-#gostrong {
+.gostrong {
 	color: #c96d1f;
 }
-#surdeg {
+.surdeg {
 	color: #1f9a70;
 	margin-right: 10px;
 }
-#superfruit {
+.superfruit {
 	color: #d22350;
 }
 span {
@@ -341,9 +352,75 @@ span {
 .table {
 	margin-top: 25px;
 }
-#bubble {
-	z-index: 200;
-	position: absolute;
+.labels {
+	font-family: angeline;
+	font-size: 3rem;
+	/*top: 20%;*/
+	/*left: 50%;*/
+	/*position: absolute !important;*/
+	/*margin-top: 80px;*/
+	height: 100%;
+}
+.hover {
+	padding-top: 20px;
+	position: absolute !important;
+	height: 90%;
+	top: 11%;
+	z-index: 100;
+}
+.anchor {
+	height: 32%;
+}
+.labels-wrapper {
+	margin-top: 15%;
+}
+.bubble-wrapper {
+	position: relative;
+	z-index: -200;
+}
+#bubble-1 {
+	display: none;
+	/*margin-bottom: 20px;*/	
+	left: -4%;
+	transform: translateX(-4%);
+}
+#bubble-2 {
+	display: none;
+	left: 20%;
+}
+#bubble-3 {
+	display: none;
+	left: 55%;
+}
+.bubble {
+	position: absolute !important;
 	text-align: center;
-	background-size: contain;
-};
+	background-size: cover;
+	top: 10%;
+	transform: translateY(-10%);
+}
+.bubble-text {
+	position: absolute !important;
+	text-align: center;
+	margin-top: -24px;
+}
+.bread-divider {
+	margin-bottom: 114px;
+}
+#modla-inner-mobile {
+/*	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+	background-color: transparent;*/
+	text-align: center;
+	background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    padding-top: 50px;
+    padding-right: 76px;
+}
+.no-paddig {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
