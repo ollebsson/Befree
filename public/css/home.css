@@ -92,6 +92,7 @@ img {
 	margin-top: 15px;
 	opacity: 1;
  	transition: opacity 0.5s linear;
+ 	width: 320px;
 }
 #logo-small {
 	width: 100px;
