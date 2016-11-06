@@ -17,11 +17,7 @@ $(function() {
 		height: $(window).height()
 	};
 
-	// window.addEventListener('resize', function (e) {
-	// 	console.log($(window).width(), $(window).height());
-	// 	console.log(e);
-
-	// });
+	
 	var pos = $('body').scrollTop();
 	function resizeNavbar() {
 
@@ -58,6 +54,9 @@ $(function() {
 		}
 	}
 	function switchLangToEnglish() {
+
+		$('#nav-bread').html('').append('BREAD');
+		$('#nav-contact').html('').append('CONTACT');
 		$('.text-story').html('').append(
 			'<h1>STORY</h1>' + 
 			'<p>Stomach problem after stomach problem, illness after illness and a continuously weak body. I decided to follow a recommendation from my doctor and tried removing gluten from my diet. Slowly but surely the stomach problems, illnesses and weakness disappeared! It was real freedom, the kind of freedom I hope many can experience.</p>' + 
@@ -66,7 +65,7 @@ $(function() {
 
 			'<p>My food-and-health interest grew even stronger than ever and it was clear so I began baking gluten-free bread from cookbooks, and then began experimenting further with my own bread in the kitchen, exactly how I would like it to taste! And here they are!</p>');
 		$('.text-bread').html('').append(
-			'<h1>ALL NATURALL GLUTENFREE DELICIOUS BREAD</h1>' + 
+			'<h1>ALL NATURAL GLUTENFREE DELICIOUS BREAD</h1>' + 
 			'<p>Through meditation and yoga, nature and all things natural have been a large part of my life. I want to supply that which is most useful for both you and our planet. That is why these breads are natural and have antioxidants, proteins, vitamins, minerals and fiber that we need to feel good and live well!</p>');
 		$('.text-vision').html('').append(
 			'I want to bake bread that everyone can eat, feel good about and enjoy! That´s why my bread is free from allergens, gluten, additives and animal products etc. The bread is for everyone who wants to live healthy and still eat well!');
@@ -79,7 +78,7 @@ $(function() {
 		'<p>What does it mean to be naturally gluten-free? ' + 
 'For me, it means that I try to have 0 ppm gluten in my diet. Part of that also means it should be naturally free from gluten and not artificially purified of it. It shouldn´t be contaminated in any way between its creation and your mouth. Studies show at there are many health benefits with eating naturally gluten-free. For me to call something naturally gluten-free means that the bread does not contain:</p>' + 
 
-		'<p>Wheat (kamut, spelled, durum, couscous, semolina, farro, bulgur, semolina etc.)</p><img class="col-xs-6 img-rounded image pull-right" src="img/faq.jpg"/>' + 
+		'<p>Wheat (kamut, spelled, durum, couscous, semolina, farro, bulgur, semolina etc.)' + 
 		'<p>Rye</p>' +
 		'<p>Barley</p>' +
 		'<p>Oat</p>' +
@@ -99,15 +98,18 @@ $(function() {
 	resizeNavbar();
 
 	function switchLangToSwedish() {
+
+		$('#nav-bread').html('').append('BRÖD');
+		$('#nav-contact').html('').append('KONTAKT');
 		$('.text-story').html('').append(
 			'<h1>STORY</h1>' + 
 			'<p>Maginfektion efter maginfektion, förkylning på fökyling och ständig svaghet i kropppen. Jag bestämde mig efter en rekommendation av min läkare att testa utesluta gluten ur kosten. Sakta men säkert försvann maginfektioner, förkylningar och svagheten! Det var verkligen en befrielse som jag hoppas fler ska få uppleva</p>' + 
 
-			'<p>Snabbt upptäckte jag att det glutenfria bördet som fanns att köpa i butikerna varken var goda eller nyttiga, de innehöll både vetestärkelse och tillsatser.</p>' + 
+			'<p>Snabbt upptäckte jag att det glutenfria bördet som fanns att köpa i butikerna varken var goda eller nyttiga, de innehöll både tillsatser och glutenfri vetestärkelse.</p>' + 
 
 			'<p>Mitt stora mat- och hälsointresse växte sig ännu starkare än förr och det var självklart att jag började baka glutenfria bröd från kokböcker för att sen börja experimentera fram mina egna bröd i köket, precis som jag ville de skulle smaka! And here they are!</p>');;
 		$('.text-bread').html('').append(
-			'<h1>ALL NATURALL GLUTENFREE DELICIOUS BREAD</h1>' + 
+			'<h1>ALL NATURAL GLUTENFREE DELICIOUS BREAD</h1>' + 
 			'<p>Genom meditation och yoga har naturen och det naturliga blivit en stor del av mitt liv. Jag vill tillföra det som är till störst nytta för både dig och vår planet. Därför är dessa bröden naturliga och innehåller både antioxdanter, proteiner, vitaminer, mineraler och fibrer som vi behöver för att må bra och leva gott!</p>');
 		$('.text-vision').html('').append(
 			'Jag vill baka bröd som alla ska kunna äta, må bra och njuta av! Därför är mina bröd fria från allergener, gluten, tillsatser och animaliska produkter etc. Bröden är till för alla som vill leva sunt och ändå äta gott!');
@@ -120,7 +122,7 @@ $(function() {
 		'<p>Vad innebär naturligt glutenfritt? ' + 
 			'Det innebär för mig att jag strävar efter 0 ppm gluten i kosten. Dels ska det vara naturligt fritt från gluten och inte artificiellt renat från det. Det ska inte vara kontaminerat någonstans på vägen mellan sitt ursprung och din mun. Studier visar att det finns flera hälsovinster med att äta naturligt glutenfritt. För att jag ska kalla någonting naturligt glutenfritt så ska brödet inte innehålla:</p>' + 
 
-		'<p>Vete  (kamut, spelt, durum, couscous, semolina, farro, bulgur, mannagryn mm.)</p><img class="col-xs-6 img-rounded image pull-right" src="img/faq.jpg"/>' + 
+		'<p>Vete  (kamut, spelt, durum, couscous, semolina, farro, bulgur, mannagryn mm.)' + 
 		'<p>Råg</p>' +
 		'<p>Korn</p>' +
 		'<p>Havre (även s.k. ”ren”)</p>' +
@@ -180,15 +182,25 @@ $(function() {
 		if(e.target.id !== '1') {
 
 			$('#bubble-1').css('z-index', 0).css('display', 'none');
+			$('#bee-one').css('display', 'none');
 		}
 		if(e.target.id !== '2') {
 
 			$('#bubble-2').css('z-index', 0).css('display', 'none');
+			$('#bee-two').css('display', 'none');
 		}		
 		if(e.target.id !== '3') {
 
 			$('#bubble-3').css('z-index', 0).css('display', 'none');
+			$('#bee-three').css('display', 'none');
 		}
+
+	});
+	window.addEventListener('resize', function (e) {
+		viewPort = {
+				width: $(window).width(),
+				height: $(window).height()
+			};
 
 	});
 	window.addEventListener('scroll', function (e) {
@@ -245,17 +257,37 @@ $(function() {
 
 		if(ev.target.id === '1') {
 			console.log(1);
-			// $('#myModal').modal('toggle');
-			$('#bubble-1').css('z-index', 300).css('display', 'block');
+			// if(viewPort.width < viewPort.height) {
+
+				// $('#myModal').modal('toggle');
+			// }
+			// else {
+
+				$('#bubble-1').css('z-index', 300).css('display', 'block');
+
+			// }
+			$('#bee-one').css('display', 'block');
 		}
 		else if(ev.target.id === '2') {
 
-			$('#bubble-2').css('z-index', 300).css('display', 'block');
-			// $('#myModal-2').modal('toggle');
+			// if(viewPort.width < viewPort.height) {
+			// 	$('#myModal-2').modal('toggle');
+			// }
+			// else {
+
+				$('#bubble-2').css('z-index', 300).css('display', 'block');
+			// }
+			$('#bee-two').css('display', 'block');
 		}
 		else if(ev.target.id === '3') {
-			$('#myModal-3').modal('toggle');
-			$('#bubble-3').css('z-index', 300).css('display', 'block');
+			// if(viewPort.width < viewPort.height) {
+			// 	$('#myModal-3').modal('toggle');
+			// }
+			// else {
+
+				$('#bubble-3').css('z-index', 300).css('display', 'block');
+			// }
+			$('#bee-three').css('display', 'block');
 		}
 	});
 	eng.addEventListener('click', function () {
