@@ -67,6 +67,9 @@
  	}
 
 }
+.center {
+	text-align: center;
+}
 h2 {
 	margin-top: 30px !important;
 	margin-bottom: 20px !important;
@@ -94,6 +97,11 @@ img {
  	transition: opacity 0.5s linear;
  	width: 320px;
 }
+@media(max-width: 1400px) {
+	.logo {
+		width: 290px;
+	}
+}
 #logo-small {
 	width: 100px;
  	opacity: 0;
@@ -106,12 +114,13 @@ img {
 }
 .image {
  	margin-top: 35px;
- 	/*box-shadow: 5px 5px 20px #bcbcbc;*/
+ 	box-shadow: 8px 8px 15px #bcbcbc;
  }
 .text {
 	font-size: 3rem;
 	margin-top: 60px;
-	margin-bottom: 40px;
+	/*margin-bottom: 20px;*/
+	line-height: 2rem;
 }
  .start-left-column {
  	box-shadow: 5px 5px 20px #bcbcbc;
@@ -120,6 +129,11 @@ img {
 .home-cover {
 	margin-top: -170px;
 	/*box-shadow: 5px 5px 20px #bcbcbc;*/
+}
+@media (max-width: 1400px) {
+	.home-cover {
+		margin-left: 100px !important;
+	}
 }
 .footer {
 	position: absolute;
@@ -152,7 +166,7 @@ img {
 }
 #submit {
 	font-family: helloGoodbye;
-	box-shadow: 5px 5px 20px #bcbcbc;
+	box-shadow: 8px 8px 15px #bcbcbc;
 	font-size: 2.125rem;
 	letter-spacing: 2px;
 }
@@ -202,10 +216,10 @@ img {
 }
 textarea {
 	width: 100%;
-	box-shadow: 5px 5px 20px #bcbcbc !important;
+	box-shadow: 8px 8px 15px #bcbcbc !important;
 }
 .input {
-	box-shadow: 5px 5px 20px #bcbcbc !important;
+	box-shadow: 8px 8px 15px #bcbcbc !important;
 }
 #modal-inner {
 	top: 50%;
@@ -235,10 +249,8 @@ textarea {
 	margin-top: 20px;
 }
 .shadow {
-	border-radius: 50%;
-	/*top: -15%;*/
-	transform: rotate(10deg);
-	margin-top: -28px;
+	border-radius: 30%;
+	transform: rotate(-1deg);
 	z-index: -100;
 
 }
@@ -353,7 +365,7 @@ span {
 	font-size: 	4rem;
 }
 .object {
-	text-align: end;
+	text-align: center;
 }
 .table {
 	margin-top: 25px;
@@ -403,13 +415,25 @@ span {
 	position: absolute !important;
 	text-align: center;
 	background-size: cover;
-	top: 20%;
-	transform: translateY(-20%);
+	top: 6%;
+	transform: translateY(-6%);
 }
 .bubble-text {
-	position: absolute !important;
 	text-align: center;
-	margin-top: -68px;
+	margin-top: 20px;
+}
+.bubble-text p {
+	line-height: 2rem;
+}
+.bubble-text span {
+	font-size: 6rem;
+}
+.bubble-text h2 {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+#super-text {
+	padding-left: 70px;
 }
 .bread-divider {
 	margin-bottom: 114px;
@@ -429,20 +453,6 @@ span {
     bottom: 1%;
     transform: translateY(-1%);
     display: none;
-}
-#bee-one {
-	display: none;
-	margin-top: -1px;
-	z-index: -900;
-	position: absolute;
-}
-#bee-two {
-	display: none;
-	margin-top: -1px;
-}
-#bee-three {
-	display: none;
-	margin-top: -1px;
 }
 .modal-bee {
 	/*margin-top: 60px;*/
@@ -469,4 +479,7 @@ span {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+}
+.tel {
+	margin-left: 15px;
 }

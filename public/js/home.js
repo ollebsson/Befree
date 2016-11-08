@@ -55,6 +55,7 @@ $(function() {
 	}
 	function switchLangToEnglish() {
 
+		$('.bee').attr('src', 'img/bimedbubbla-eng.png')
 		$('#nav-bread').html('').append('BREAD');
 		$('#nav-contact').html('').append('CONTACT');
 		$('.text-story').html('').append(
@@ -65,7 +66,7 @@ $(function() {
 
 			'<p>My food-and-health interest grew even stronger than ever and it was clear so I began baking gluten-free bread from cookbooks, and then began experimenting further with my own bread in the kitchen, exactly how I would like it to taste! And here they are!</p>');
 		$('.text-bread').html('').append(
-			'<h1>ALL NATURAL GLUTENFREE DELICIOUS BREAD</h1>' + 
+			'<h1>ALL NATURAL GLUTEN-FREE DELICIOUS BREAD</h1>' + 
 			'<p>Through meditation and yoga, nature and all things natural have been a large part of my life. I want to supply that which is most useful for both you and our planet. That is why these breads are natural and have antioxidants, proteins, vitamins, minerals and fiber that we need to feel good and live well!</p>');
 		$('.text-vision').html('').append(
 			'I want to bake bread that everyone can eat, feel good about and enjoy! That´s why my bread is free from allergens, gluten, additives and animal products etc. The bread is for everyone who wants to live healthy and still eat well!');
@@ -82,14 +83,14 @@ $(function() {
 		'<p>Rye</p>' +
 		'<p>Barley</p>' +
 		'<p>Oat</p>' +
-		'<p>Wheat starch (including so-called "glutenfree")</p>' + 
+		'<p>Wheat starch (including so-called "gluten-free")</p>' + 
 		'<p>Glucose syrup (wheat)</p>' +
 		'<p>Glucose, dextrose (wheat)</p>' + 
 		'<p>Maltodextrin (wheat, barley)</p> ' + 
-		'<p>Caramel (on wheat)</p>' +
+		'<p>Caramel (wheat)</p>' +
 
-		'<p><i>How can you cook bread naturally gluten-free?</i><p>' + 
-		'<p>I bake with naturally clean flour such as flour from buckwheat, corn, cassava, seeds, dried berries, sourdough made from rice and a small part (0.3%) fermented rice flour.</p>' +
+		'<p><i>How can you beak bread naturally gluten-free?</i><p>' + 
+		'<p>I bake with natural clean flour such as flour from buckwheat, corn, cassava, seeds, dried berries, sourdough made from rice and a small part (0.3%) fermented rice flour.</p>' +
 
 		'<p><i>Why Vegan?</i></p>' + 
 
@@ -98,7 +99,7 @@ $(function() {
 	resizeNavbar();
 
 	function switchLangToSwedish() {
-
+		$('.bee').attr('src', 'img/bimedbubbla.jpg')
 		$('#nav-bread').html('').append('BRÖD');
 		$('#nav-contact').html('').append('KONTAKT');
 		$('.text-story').html('').append(
@@ -109,7 +110,7 @@ $(function() {
 
 			'<p>Mitt stora mat- och hälsointresse växte sig ännu starkare än förr och det var självklart att jag började baka glutenfria bröd från kokböcker för att sen börja experimentera fram mina egna bröd i köket, precis som jag ville de skulle smaka! And here they are!</p>');;
 		$('.text-bread').html('').append(
-			'<h1>ALL NATURAL GLUTENFREE DELICIOUS BREAD</h1>' + 
+			'<h1>ALL NATURAL GLUTEN-FREE DELICIOUS BREAD</h1>' + 
 			'<p>Genom meditation och yoga har naturen och det naturliga blivit en stor del av mitt liv. Jag vill tillföra det som är till störst nytta för både dig och vår planet. Därför är dessa bröden naturliga och innehåller både antioxdanter, proteiner, vitaminer, mineraler och fibrer som vi behöver för att må bra och leva gott!</p>');
 		$('.text-vision').html('').append(
 			'Jag vill baka bröd som alla ska kunna äta, må bra och njuta av! Därför är mina bröd fria från allergener, gluten, tillsatser och animaliska produkter etc. Bröden är till för alla som vill leva sunt och ändå äta gott!');
@@ -133,7 +134,7 @@ $(function() {
 		'<p>Sockerkulör (på vete)</p>' +
 
 		'<p><i>Hur kan du baka bröd naturligt glutenfritt?</i><p>' + 
-		'<p>Jag bakar med naturligt rena mjöler såsom från bovete, majs, cassava, fröer, torkade bär, surdeg gjort på ris och en liten andel (0,3%) fermenterat rismjöl.</p>' +
+		'<p>Jag bakar med naturligt rena mjöler såsom bovete, majs, cassava, fröer, torkade bär, surdeg gjort på ris och en liten andel (0,3%) fermenterat rismjöl.</p>' +
 
 		'<p><i>Varför Vegan?</i></p>' + 
 
@@ -182,17 +183,14 @@ $(function() {
 		if(e.target.id !== '1') {
 
 			$('#bubble-1').css('z-index', 0).css('display', 'none');
-			$('#bee-one').css('display', 'none');
 		}
 		if(e.target.id !== '2') {
 
 			$('#bubble-2').css('z-index', 0).css('display', 'none');
-			$('#bee-two').css('display', 'none');
 		}		
 		if(e.target.id !== '3') {
 
 			$('#bubble-3').css('z-index', 0).css('display', 'none');
-			$('#bee-three').css('display', 'none');
 		}
 
 	});
@@ -235,20 +233,20 @@ $(function() {
 		}	
 	});
 	$('#go').mouseover(function() {
-		$('#go-lb').css('left', '5%').css('opacity', 1);
+		$('#go-lb').css('left', '3%').css('opacity', 1);
 
 	});
 	$('#go').mouseleave(function() {
 		$('#go-lb').css('opacity', 0).css('left', '-30%')
 	});
 	$('#super').mouseover(function() {
-		$('#super-lb').css('opacity', 1).css('left', '5%');
+		$('#super-lb').css('opacity', 1).css('left', '3%');
 	});
 	$('#super').mouseleave(function() {
 		$('#super-lb').css('opacity', 0).css('left', '-30%');
 	});
 	$('#sur').mouseover(function() {
-		$('#sur-lb').css('opacity', 1).css('left', '5%');
+		$('#sur-lb').css('opacity', 1).css('left', '3%');
 	});
 	$('#sur').mouseleave(function() {
 		$('#sur-lb').css('opacity', 0).css('left', '-30%');
