@@ -94,7 +94,7 @@ img {
 .logo {
 	margin-top: 15px;
 	opacity: 1;
- 	transition: opacity 0.5s linear;
+ 	transition: opacity 0.3s linear;
  	width: 320px;
 }
 @media(max-width: 1400px) {
@@ -105,7 +105,7 @@ img {
 #logo-small {
 	width: 100px;
  	opacity: 0;
- 	transition: opacity 0.5s linear;
+ 	transition: opacity 0.2s linear;
 }
 @media(max-width: 700px) {
 	#logo-small {
@@ -237,7 +237,7 @@ h1 {
 	margin-bottom: 30px !important;
 }
 .bread {
-	transition: ease-out 0.2s;
+	transition: ease 0.1s;
 }
 .bread:hover {
 	transform: scale(1.1,1.1);
