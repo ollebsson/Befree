@@ -338,6 +338,7 @@ span {
 	background-size: cover;
 	top: 6%;
 	transform: translateY(-6%);
+	cursor: pointer;
 }
 .bubble-text {
 	text-align: center;
