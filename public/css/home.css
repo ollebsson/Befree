@@ -237,7 +237,7 @@ h1 {
 	margin-bottom: 30px !important;
 }
 .bread {
-	transition: ease 0.1s;
+	transition: ease 0.3s;
 }
 .bread:hover {
 	transform: scale(1.1,1.1);
@@ -293,7 +293,7 @@ span {
 }
 .labels {
 	font-family: angeline;
-	font-size: 3rem;
+	font-size: 5rem;
 	/*top: 20%;*/
 	/*left: 50%;*/
 	/*position: absolute !important;*/

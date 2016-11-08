@@ -55,19 +55,22 @@ $(function() {
 	}
 	function switchLangToEnglish() {
 
-		$('.bee').attr('src', 'img/bimedbubbla-eng.png')
+		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Sourdough</p>');
+		$('#surTwo').html('Sourdough');
+		$('#surThree').html('Sourdough');
+		$('.bee').attr('src', 'img/bimedbubbla-eng.png');
 		$('#nav-bread').html('').append('BREAD');
 		$('#nav-contact').html('').append('CONTACT');
 		$('.text-story').html('').append(
 			'<h1>STORY</h1>' + 
-			'<p>Stomach problem after stomach problem, illness after illness and a continuously weak body. I decided to follow a recommendation from my doctor and tried removing gluten from my diet. Slowly but surely the stomach problems, illnesses and weakness disappeared! It was real freedom, the kind of freedom I hope many can experience.</p>' + 
+			'<p>Stomach problem after stomach problem, illness after illness and a continuously weak body. I decided to follow a recommendation from my doctor and tried removing gluten from my diet. Slowly but surely the stomach problems, illnesses and weakness disappeared! It felt like real freedom, the kind of freedom I hope many can experience.</p>' + 
 
-			'<p>I quickly discovered that the gluten-free bread you can buy at the store isn´t good or useful, it has both wheat starch and additives.</p>' + 
+			'<p>I quickly discovered that the gluten-free bread you can buy at the store isn&#39;t good enough or useful as it has both wheat starch and additives.</p>' + 
 
-			'<p>My food-and-health interest grew even stronger than ever and it was clear so I began baking gluten-free bread from cookbooks, and then began experimenting further with my own bread in the kitchen, exactly how I would like it to taste! And here they are!</p>');
+			'<p>My food-and-health interest grew even stronger than ever and it was clear to me what to do! I began baking gluten-free bread from cookbooks, and then began experimenting further , baking my own bread , just the way I like it! And here they are!</p>');
 		$('.text-bread').html('').append(
 			'<h1>ALL NATURAL GLUTEN-FREE DELICIOUS BREAD</h1>' + 
-			'<p>Through meditation and yoga, nature and all things natural have been a large part of my life. I want to supply that which is most useful for both you and our planet. That is why these breads are natural and have antioxidants, proteins, vitamins, minerals and fiber that we need to feel good and live well!</p>');
+			'<p>Meditation and yoga, nature and all things natural have been a large part of my life. I want to supply what is most useful for both you and our planet. That is why these breads are natural and have antioxidants, proteins, vitamins, minerals and fiber that we need to feel good and live well!</p>');
 		$('.text-vision').html('').append(
 			'I want to bake bread that everyone can eat, feel good about and enjoy! That´s why my bread is free from allergens, gluten, additives and animal products etc. The bread is for everyone who wants to live healthy and still eat well!');
 		$('.text-contact').html('').append(
@@ -77,7 +80,7 @@ $(function() {
 
 
 		'<p>What does it mean to be naturally gluten-free? ' + 
-'For me, it means that I try to have 0 ppm gluten in my diet. Part of that also means it should be naturally free from gluten and not artificially purified of it. It shouldn´t be contaminated in any way between its creation and your mouth. Studies show at there are many health benefits with eating naturally gluten-free. For me to call something naturally gluten-free means that the bread does not contain:</p>' + 
+' For me, it means that I try to have 0 ppm gluten in my diet. Part of that also means that it is naturally free from gluten and shouldn&#39;t be contaminated  in the process of being made or in any way , by the time you consume it. Studies show that they&#39;re many health benefits with eating naturally gluten-free. For me, to call something naturally gluten-free , means that the bread does not contain:</p>' + 
 
 		'<p>Wheat (kamut, spelled, durum, couscous, semolina, farro, bulgur, semolina etc.)' + 
 		'<p>Rye</p>' +
@@ -99,6 +102,10 @@ $(function() {
 	resizeNavbar();
 
 	function switchLangToSwedish() {
+
+		$('#surTwo').html('Surdeg');
+		$('#surThree').html('Surdeg');
+		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdeg</p>');
 		$('.bee').attr('src', 'img/bimedbubbla.jpg')
 		$('#nav-bread').html('').append('BRÖD');
 		$('#nav-contact').html('').append('KONTAKT');
@@ -199,7 +206,7 @@ $(function() {
 				width: $(window).width(),
 				height: $(window).height()
 			};
-
+		resizeNavbar();
 	});
 	window.addEventListener('scroll', function (e) {
 		menuDown = $("#navbar-collapse").is(":visible");
@@ -233,20 +240,20 @@ $(function() {
 		}	
 	});
 	$('#go').mouseover(function() {
-		$('#go-lb').css('left', '3%').css('opacity', 1);
+		$('#go-lb').css('left', '2%').css('opacity', 1);
 
 	});
 	$('#go').mouseleave(function() {
 		$('#go-lb').css('opacity', 0).css('left', '-30%')
 	});
 	$('#super').mouseover(function() {
-		$('#super-lb').css('opacity', 1).css('left', '3%');
+		$('#super-lb').css('opacity', 1).css('left', '2%');
 	});
 	$('#super').mouseleave(function() {
 		$('#super-lb').css('opacity', 0).css('left', '-30%');
 	});
 	$('#sur').mouseover(function() {
-		$('#sur-lb').css('opacity', 1).css('left', '3%');
+		$('#sur-lb').css('opacity', 1).css('left', '2%');
 	});
 	$('#sur').mouseleave(function() {
 		$('#sur-lb').css('opacity', 0).css('left', '-30%');
