@@ -122,6 +122,12 @@ img {
 	/*margin-bottom: 20px;*/
 	line-height: 2rem;
 }
+@media(min-width: 1600px) {
+
+	.text {
+		margin-top: 125px;
+	} 
+}
 .home-cover {
 	margin-top: -170px;
 }
