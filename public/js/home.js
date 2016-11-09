@@ -93,7 +93,7 @@ $(function() {
 		'<p>Caramel (wheat)</p>' +
 
 		'<p><i>How can you beak bread naturally gluten-free?</i><p>' + 
-		'<p>I bake with natural clean flour such as flour from buckwheat, corn, cassava, seeds, dried berries, sourdough made from rice and a small part (0.3%) fermented rice flour.</p>' +
+		'<p>I bake with natural clean flour such as flour from buckwheat, corn, cassava, seeds, dried berries and sourdough made from rice.</p>' +
 
 		'<p><i>Why Vegan?</i></p>' + 
 
@@ -141,7 +141,7 @@ $(function() {
 		'<p>Sockerkulör (på vete)</p>' +
 
 		'<p><i>Hur kan du baka bröd naturligt glutenfritt?</i><p>' + 
-		'<p>Jag bakar med naturligt rena mjöler såsom bovete, majs, cassava, fröer, torkade bär, surdeg gjort på ris och en liten andel (0,3%) fermenterat rismjöl.</p>' +
+		'<p>Jag bakar med naturligt rena mjöler såsom bovete, majs, cassava, fröer, torkade bär och surdeg gjort på ris.</p>' +
 
 		'<p><i>Varför Vegan?</i></p>' + 
 
