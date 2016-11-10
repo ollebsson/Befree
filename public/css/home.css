@@ -349,6 +349,7 @@ span {
 .bubble-text {
 	text-align: center;
 	margin-top: 20px;
+	font-size: 1.75rem;
 }
 .bubble-text p {
 	line-height: 2rem;
@@ -361,7 +362,7 @@ span {
 	margin-bottom: 10px !important;
 }
 #super-text {
-	padding-left: 70px;
+	padding-left: 43px;
 }
 .bread-divider {
 	margin-bottom: 114px;
