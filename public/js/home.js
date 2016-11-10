@@ -134,8 +134,8 @@ $(function() {
 			'<span class="superfruit">Superfruit</span>' + 
 			'<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>' + 
 			'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal,' +
-			'cassavamjöl, raw agave nektar*, torkad osötad tranbär,' +
-			'torkad osötad aprikos, pumpakärnor, kanel, salt, glutenfritt surdegspulver' +
+			'cassavamjöl, raw agave nektar*, torkade osötade tranbär,' +
+			'torkade osockrade aprikoser, pumpakärnor, kanel, salt, glutenfritt surdegspulver' +
 			' på rismjöl, jäst, Acaipulver*.*Ekologisk Ingrediens</i>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
