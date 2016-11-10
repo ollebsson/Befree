@@ -58,21 +58,21 @@ $(function() {
 		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdeg</span>' +
 		'<h2>JUICY &amp; MILD TO YOUR STOMACH</h2>' +
 
-		'<p><i>Ingredients: Corn flour, buckwheat flour, psyllium husk,' + 
-		'cassavamjöl, raw agave nectar *, salt, leaven on rice,' + 
-		'yeast. * Organic Ingredient</i></p>');
+		'<p><i>Ingredients: Corn flour, buckwheat flour, psyllium husk, ' + 
+		'cassava flour, raw agave nectar *, salt, gluten-free sourdough powder on rice flour,' + 
+		' yeast. * Organic Ingredient</i></p>');
 
 		$('.text-super').html('').append(
 			'<span class="superfruit">Superfruit</span>' + 
 			'<h2>ANTIOXIDANT RICH WITH ACAI, BERRIES &amp; CINNAMON</h2>' + 
-			'<p><i>Ingredients: corn flour, buckwheat flour, psyllium husk,' + 
-			'cassavamjöl, raw agave nectar *, dried sweetened cranberries,' +
-			'unsweetened dried apricots, pumpkin seeds, cinnamon, salt, leaven the' +
-			'rice, yeast, Acaipulver *. * Organic Ingredient</i></p>');
+			'<p><i>Ingredients: Corn flour, buckwheat flour, psyllium husk,' + 
+			'cassava flour, raw agave nectar *, sweetened dried cranberries,' +
+			'dried unsweetened apricots, pumpkin seeds, cinnamon, salt, leaven Paris' +
+			'yeast, gluten-free sourdough powder on rice flour, Acaipulver *. * Organic Ingredient</i></p>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
 			'<h2>PROTEINACEOUS PACKED WITH FIBRES &amp; OMEGA-3</h2>' +
-			'<p><i>Ingredinser: Buckwheat flour, flax seeds, sunflower seeds, chia seeds, yeast,' +
+			'<p><i>Ingredinser: Buckwheat flour, flax seeds, sunflower seeds, chia seeds, yeast, ' +
 			'baking powder, psyllium husk, raw agave nectar' + 
 			'(Organic ingredients).</i></p>');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Sourdough</p>');
@@ -126,8 +126,8 @@ $(function() {
 		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdeg</span>' +
 		'<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>' +
 
-		'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal,' +
-		'cassavamjöl, raw agave nektar*, salt, surdeg på ris,' + 
+		'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal, ' +
+		'cassavamjöl, raw agave nektar*, salt, glutenfritt surdegspulver på rismjöl' + 
 		'jäst.*Ekologisk Ingrediens</i></p>');
 
 		$('.text-super').html('').append(
@@ -135,14 +135,14 @@ $(function() {
 			'<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>' + 
 			'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal,' +
 			'cassavamjöl, raw agave nektar*, torkad osötad tranbär,' +
-			'torkad osötad aprikos, pumpakärnor, kanel, salt, surdeg på' +
-			'ris, jäst, Acaipulver*.*Ekologisk Ingrediens</i>');
+			'torkad osötad aprikos, pumpakärnor, kanel, salt, glutenfritt surdegspulver' +
+			' på rismjöl, jäst, Acaipulver*.*Ekologisk Ingrediens</i>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
 			'<h2>PROTEINRIKT FULLPROPPAT MED FIBRER &amp; OMEGA-3</h2>'+
-			'<p><i>Ingredinser: Buckwheat flour, flax seeds, sunflower seeds, chia seeds, yeast,' +
-			'baking powder, psyllium husk, raw agave nectar' + 
-			'(Organic ingredients).</i></p>');
+			'<p><i>Ingredinser: Bovetemjöl, linfrön, solroskärnor, chiafrön, jäst, ' +
+			'bakpulver, psylliumfröskal, raw agave nektar ' + 
+			'(ekologisk ingrediens).</i></p>');
 		$('#surTwo').html('Surdeg');
 		$('#surThree').html('Surdeg');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdeg</p>');
