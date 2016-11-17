@@ -65,16 +65,16 @@ $(function() {
 		$('.text-super').html('').append(
 			'<span class="superfruit">Superfruit</span>' + 
 			'<h2>ANTIOXIDANT RICH WITH ACAI, BERRIES &amp; CINNAMON</h2>' + 
-			'<p><i>Ingredients: Corn flour, buckwheat flour, psyllium husk,' + 
-			'cassava flour, raw agave nectar *, sweetened dried cranberries,' +
-			'dried unsweetened apricots, pumpkin seeds, cinnamon, salt, leaven Paris' +
-			'yeast, gluten-free sourdough powder on rice flour, Acaipulver *. * Organic Ingredient</i></p>');
+			'<p><i>Ingredients: corn flour, buckwheat flour, psyllium seed husks,' + 
+			'cassava flour, raw agave nectar *, unsweetened dried apricotscranberries' +
+			'unsweetened dried apricots, pumpkin seeds, cinnamon, salt, ' +
+			'yeast, gluten-free sourdough powder from rice flour, acai-powder *. * Organic Ingredient</i></p>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
-			'<h2>PROTEINACEOUS PACKED WITH FIBRES &amp; OMEGA-3</h2>' +
-			'<p><i>Ingredinser: Buckwheat flour, flax seeds, sunflower seeds, chia seeds, yeast, ' +
-			'baking powder, psyllium husk, raw agave nectar' + 
-			'(Organic ingredients).</i></p>');
+			'<h2>PROTEIN RICH BREAD FILLED WITH LOTS OF FIBRES &amp; OMEGA-3</h2>' +
+			'<p><i>Ingredinser: Buckwheat flour, linseed, sunflower seeds, chia seeds, yeast, ' +
+			'baking powder, psyllium seed husk, raw agave nectar' + 
+			'(Organic ingredient).</i></p>');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Sourdough</p>');
 		$('#surTwo').html('Sourdough');
 		$('#surThree').html('Sourdough');
