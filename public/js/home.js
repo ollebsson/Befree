@@ -67,14 +67,14 @@ $(function() {
 			'<p id="super-paragraph"><i>Ingredients: Corn flour, buckwheat flour, psyllium seed husks,' + 
 			'cassava flour, raw agave nectar *, unsweetened dried apricotscranberries, ' +
 			'unsweetened dried apricots, pumpkin seeds, cinnamon, salt, ' +
-			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder</i></p>'+
-			'<p><i> *. * Organic Ingredient</i></p>');
+			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder *,</i></p>'+
+			'<p><i>* Organic Ingredient</i></p>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
 			'<h2>PROTEIN RICH BREAD FILLED WITH LOTS OF FIBRES &amp; OMEGA-3</h2>' +
 			'<p><i>Ingredinser: Buckwheat flour, linseed, sunflower seeds, chia seeds, yeast, ' +
 			'baking powder, psyllium seed husk, raw agave nectar' + 
-			'(Organic ingredient).</i></p>');
+			' (Organic ingredient).</i></p>');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Sourdough</p>');
 		$('#surTwo').html('Sourdough');
 		$('#surThree').html('Sourdough');
