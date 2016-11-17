@@ -54,21 +54,21 @@ $(function() {
 		}
 	}
 	function switchLangToEnglish() {
-
+			
 		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdeg</span>' +
-		'<h2>JUICY &amp; MILD TO YOUR STOMACH</h2>' +
+		'<h2>JUICY &amp; MILD FOR YOUR STOMACH</h2>' +
 
 		'<p><i>Ingredients: Corn flour, buckwheat flour, psyllium husk, ' + 
-		'cassava flour, raw agave nectar *, salt, gluten-free sourdough powder on rice flour,' + 
+		'cassava flour, raw agave nectar *, salt, gluten-free sourdough powder made out of rice flourrice flour, ' + 
 		' yeast. * Organic Ingredient</i></p>');
-
 		$('.text-super').html('').append(
 			'<span class="superfruit">Superfruit</span>' + 
-			'<h2>ANTIOXIDANT RICH WITH ACAI, BERRIES &amp; CINNAMON</h2>' + 
-			'<p><i>Ingredients: corn flour, buckwheat flour, psyllium seed husks,' + 
-			'cassava flour, raw agave nectar *, unsweetened dried apricotscranberries' +
+			'<h2>RICH IN ANTIOXIDANTS, ACAI, BERRIES &amp; CINNAMON</h2>' + 
+			'<p id="super-paragraph"><i>Ingredients: Corn flour, buckwheat flour, psyllium seed husks,' + 
+			'cassava flour, raw agave nectar *, unsweetened dried apricotscranberries, ' +
 			'unsweetened dried apricots, pumpkin seeds, cinnamon, salt, ' +
-			'yeast, gluten-free sourdough powder from rice flour, acai-powder *. * Organic Ingredient</i></p>');
+			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder</i></p>'+
+			'<p><i> *. * Organic Ingredient</i></p>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
 			'<h2>PROTEIN RICH BREAD FILLED WITH LOTS OF FIBRES &amp; OMEGA-3</h2>' +
