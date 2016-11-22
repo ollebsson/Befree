@@ -67,7 +67,7 @@ $(function() {
 			'<p id="super-paragraph"><i>Ingredients: Corn flour, buckwheat flour, psyllium seed husks,' + 
 			'cassava flour, raw agave nectar *, unsweetened dried apricotscranberries, ' +
 			'unsweetened dried apricots, pumpkin seeds, cinnamon, salt, ' +
-			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder *,</i></p>'+
+			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder *.</i></p>'+
 			'<p><i>* Organic Ingredient</i></p>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
@@ -78,7 +78,7 @@ $(function() {
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Sourdough</p>');
 		$('#surTwo').html('Sourdough');
 		$('#surThree').html('Sourdough');
-		$('.bee').attr('src', 'img/bimedbubbla-eng.png');
+		$('.bee').attr('src', 'img/bimedbubbla-eng.jpg');
 		$('#nav-bread').html('').append('BREAD');
 		$('#nav-contact').html('').append('CONTACT');
 		$('.text-story').html('').append(
