@@ -127,7 +127,7 @@ $(function() {
 		'<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>' +
 
 		'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal, ' +
-		'cassavamjöl, raw agave nektar*, salt, glutenfritt surdegspulver på rismjöl' + 
+		'cassavamjöl, raw agave nektar*, salt, glutenfritt surdegspulver, rismjöl' + 
 		'jäst.*Ekologisk Ingrediens</i></p>');
 
 		$('.text-super').html('').append(
@@ -135,8 +135,8 @@ $(function() {
 			'<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>' + 
 			'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal,' +
 			'cassavamjöl, raw agave nektar*, torkade osötade tranbär,' +
-			'torkade osockrade aprikoser, pumpakärnor, kanel, salt, glutenfritt surdegspulver' +
-			' på rismjöl, jäst, Acaipulver*.*Ekologisk Ingrediens</i>');
+			'torkade osockrade aprikoser, pumpakärnor, kanel, salt, glutenfritt surdegspulver, ' +
+			'rismjöl, jäst, Acaipulver*.*Ekologisk Ingrediens</i>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
 			'<h2>PROTEINRIKT FULLPROPPAT MED FIBRER &amp; OMEGA-3</h2>'+
