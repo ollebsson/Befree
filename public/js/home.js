@@ -59,7 +59,7 @@ $(function() {
 		'<h2>JUICY &amp; MILD FOR YOUR STOMACH</h2>' +
 
 		'<p><i>Ingredients: Corn flour, buckwheat flour, psyllium husk, ' + 
-		'cassava flour, raw agave nectar *, salt, gluten-free sourdough powder made out of rice flourrice flour, ' + 
+		'cassava flour, raw agave nectar *, salt, gluten-free sourdough powder made out of rice, flourrice flour, ' + 
 		' yeast. * Organic Ingredient</i></p>');
 		$('.text-super').html('').append(
 			'<span class="superfruit">Superfruit</span>' + 
@@ -73,7 +73,7 @@ $(function() {
 			'<span class="gostrong">Go Strong</span>' + 
 			'<h2>PROTEIN RICH BREAD FILLED WITH LOTS OF FIBRES &amp; OMEGA-3</h2>' +
 			'<p><i>Ingredinser: Buckwheat flour, linseed, sunflower seeds, chia seeds, yeast, ' +
-			'baking powder, psyllium seed husk, raw agave nectar' + 
+			'baking powder, psyllium seed husk, salt, raw agave nectar' + 
 			' (Organic ingredient).</i></p>');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Sourdough</p>');
 		$('#surTwo').html('Sourdough');
