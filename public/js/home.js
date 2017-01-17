@@ -58,23 +58,22 @@ $(function() {
 		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdeg</span>' +
 		'<h2>JUICY &amp; MILD FOR YOUR STOMACH</h2>' +
 
-		'<p><i>Ingredients: Corn flour, buckwheat flour, psyllium husk, ' + 
-		'cassava flour, raw agave nectar *, salt, gluten-free sourdough powder made out of rice, flourrice flour, ' + 
-		' yeast. * Organic Ingredient</i></p>');
+		'<p><i>Ingredients: corn flour, buckwheat flour, psyllium husk, ' + 
+		'cassava flour, raw agave nectar, salt, gluten-free sourdough powder made out of rice flour, ' + 
+		' yeast.</i></p>');
 		$('.text-super').html('').append(
-			'<span class="superfruit">Superfruit</span>' + 
+			'<span class="superfruit">Powerfruit</span>' + 
 			'<h2>RICH IN ANTIOXIDANTS, ACAI, BERRIES &amp; CINNAMON</h2>' + 
-			'<p id="super-paragraph"><i>Ingredients: Corn flour, buckwheat flour, psyllium seed husks,' + 
-			'cassava flour, raw agave nectar *, unsweetened dried apricotscranberries, ' +
-			'unsweetened dried apricots, pumpkin seeds, cinnamon, salt, ' +
-			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder *.</i></p>'+
-			'<p><i>* Organic Ingredient</i></p>');
+			'<p id="super-paragraph"><i>Ingredients: corn flour, buckwheat flour, psyllium seed husks,' + 
+			'cassava flour, raw agave nectar, unsweetened dried apricots, ' +
+			'pumpkin seeds, cinnamon, salt, ' +
+			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder.</i></p>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
-			'<h2>PROTEIN RICH BREAD FILLED WITH LOTS OF FIBRES &amp; OMEGA-3</h2>' +
-			'<p><i>Ingredinser: Buckwheat flour, linseed, sunflower seeds, chia seeds, yeast, ' +
+			'<h2>A STRONG BREAD RICH WITH FIBER &amp; OMEGA-3</h2>' +
+			'<p><i>Ingredients: buckwheat flour, linseed, sunflower seeds, chia seeds, yeast, ' +
 			'baking powder, psyllium seed husk, salt, raw agave nectar' + 
-			' (Organic ingredient).</i></p>');
+			'.</i></p>');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Sourdough</p>');
 		$('#surTwo').html('Sourdough');
 		$('#surThree').html('Sourdough');
@@ -85,14 +84,14 @@ $(function() {
 			'<h1>STORY</h1>' + 
 			'<p>Stomach problem after stomach problem, illness after illness and a continuously weak body. I decided to follow a recommendation from my doctor and tried removing gluten from my diet. Slowly but surely the stomach problems, illnesses and weakness disappeared! It felt like real freedom, the kind of freedom I hope many can experience.</p>' + 
 
-			'<p>I quickly discovered that the gluten-free bread you can buy at the store isn&#39;t good enough or useful as it has both wheat starch and additives.</p>' + 
+			'<p>I quickly discovered that the gluten-free bread you can buy at the store isn&#39;t tasty or healthy as it contains both gluten-free wheat starch and additives.</p>' + 
 
-			'<p>My food-and-health interest grew even stronger than ever and it was clear to me what to do! I began baking gluten-free bread from cookbooks, and then began experimenting further , baking my own bread , just the way I like it! And here they are!</p>');
+			'<p>My food-and-health interest grew even stronger than ever and it was clear to me what to do! I began experimenting, baking my own bread , just the way I like it! And here they are!</p>');
 		$('.text-bread').html('').append(
 			'<h1>ALL NATURAL GLUTEN-FREE DELICIOUS BREAD</h1>' + 
 			'<p>Meditation and yoga, nature and all things natural have been a large part of my life. I want to supply what is most useful for both you and our planet. That is why these breads are natural and have antioxidants, proteins, vitamins, minerals and fiber that we need to feel good and live well!</p>');
 		$('.text-vision').html('').append(
-			'I want to bake bread that everyone can eat, feel good about and enjoy! That´s why my bread is free from allergens, gluten, additives and animal products etc. The bread is for everyone who wants to live healthy and still eat well!');
+			'I want to bake bread that everyone can eat, stay healthy and enjoy! That´s why my bread is free from allergens, gluten, additives and animal products etc. The bread is for everyone who wants to live healthy and still eat well!');
 		$('.text-contact').html('').append(
 			'WRITE TO ME!');
 		$('.text-faq').html('').append(
@@ -100,20 +99,20 @@ $(function() {
 
 
 		'<p>What does it mean to be naturally gluten-free? ' + 
-' For me, it means that I try to have 0 ppm gluten in my diet. Part of that also means that it is naturally free from gluten and shouldn&#39;t be contaminated  in the process of being made or in any way , by the time you consume it. Studies show that they&#39;re many health benefits with eating naturally gluten-free. For me, to call something naturally gluten-free , means that the bread does not contain:</p>' + 
+' For me, it means that I try to have 0 ppm gluten in my diet. Part of that also means that it is naturally free from gluten and shouldn&#39;t be contaminated  in the process of being made or in any way by the time you consume it. Studies show that they&#39;re many health benefits with eating naturally gluten-free. For me, to call something naturally gluten-free , means that the bread does not contain:</p>' + 
 
 		'<p>Wheat (kamut, spelled, durum, couscous, semolina, farro, bulgur, semolina etc.)' + 
 		'<p>Rye</p>' +
 		'<p>Barley</p>' +
-		'<p>Oat</p>' +
+		'<p>Oat (including so-called "gluten-free")</p>' +
 		'<p>Wheat starch (including so-called "gluten-free")</p>' + 
 		'<p>Glucose syrup (wheat)</p>' +
 		'<p>Glucose, dextrose (wheat)</p>' + 
 		'<p>Maltodextrin (wheat, barley)</p> ' + 
 		'<p>Caramel (wheat)</p>' +
 
-		'<p><i>How can you beak bread naturally gluten-free?</i><p>' + 
-		'<p>I bake with natural clean flour such as flour from buckwheat, corn, cassava, seeds, dried berries and sourdough made from rice.</p>' +
+		'<p><i>How can you bake bread naturally gluten-free?</i><p>' + 
+		'<p>I bake with natural flour such as flour from buckwheat, corn, cassava, seeds, dried berries and sourdough made from rice.</p>' +
 
 		'<p><i>Why Vegan?</i></p>' + 
 
@@ -123,26 +122,25 @@ $(function() {
 
 	function switchLangToSwedish() {
 
-		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdeg</span>' +
+		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdegsbrod</span>' +
 		'<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>' +
 
-		'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal, ' +
-		'cassavamjöl, raw agave nektar*, salt, glutenfritt surdegspulver på rismjöl, ' + 
-		'jäst.*Ekologisk Ingrediens</i></p>');
+		'<p><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal, ' +
+		'cassavamjöl, raw agave sirap, salt, glutenfritt surdegspulver på rismjöl, ' + 
+		'jäst.</i></p>');
 
 		$('.text-super').html('').append(
-			'<span class="superfruit">Superfruit</span>' + 
+			'<span class="superfruit">Powerfruit</span>' + 
 			'<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>' + 
-			'<p><i>Ingredienser: Majsmjöl, bovetemjöl, psylliumfröskal,' +
-			'cassavamjöl, raw agave nektar*, torkade osötade tranbär,' +
-			'torkade osockrade aprikoser, pumpakärnor, kanel, salt, glutenfritt surdegspulver på ' +
-			'rismjöl, jäst, Acaipulver*.*Ekologisk Ingrediens</i>');
+			'<p><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal,' +
+			'cassavamjöl, raw agave sirap, torkade osötade aprikoser, ' +
+			'pumpakärnor, kanel, salt, glutenfritt surdegspulver på ' +
+			'rismjöl, jäst, acaipulver</i>');
 		$('.text-strong').html('').append(
 			'<span class="gostrong">Go Strong</span>' + 
-			'<h2>PROTEINRIKT FULLPROPPAT MED FIBRER &amp; OMEGA-3</h2>'+
-			'<p><i>Ingredinser: Bovetemjöl, linfrön, solroskärnor, chiafrön, jäst, ' +
-			'bakpulver, psylliumfröskal, raw agave nektar, glutenfritt surdegspulver på rismjöl, ' + 
-			'(ekologisk ingrediens).</i></p>');
+			'<h2>ETT STARKT OCH FIBERRIKT  BROD</h2>'+
+			'<p><i>Ingredinser: bovetemjöl, linfrön, solroskärnor, chiafrön, jäst, ' +
+			'bakpulver, psylliumfröskal, raw agave sirap.</i></p>');
 		$('#surTwo').html('Surdeg');
 		$('#surThree').html('Surdeg');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdeg</p>');
