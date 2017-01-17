@@ -416,3 +416,16 @@ span {
 .tel {
 	margin-left: 15px;
 }
+.dots-colored {
+	height: 9px;
+	position: absolute;
+	top: 5px;
+}
+#slide {
+	top: 20%;
+	left: 78%;
+}
+#dots-span {
+	top: 10px;
+	left: 69%;
+}

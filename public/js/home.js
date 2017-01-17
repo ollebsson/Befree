@@ -122,7 +122,7 @@ $(function() {
 
 	function switchLangToSwedish() {
 
-		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdegsbrod</span>' +
+		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored" id="dots-span" src="img/dots-colored.png"/>od</span>' +
 		'<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>' +
 
 		'<p><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal, ' +
@@ -141,9 +141,9 @@ $(function() {
 			'<h2>ETT STARKT OCH FIBERRIKT  BROD</h2>'+
 			'<p><i>Ingredinser: bovetemjöl, linfrön, solroskärnor, chiafrön, jäst, ' +
 			'bakpulver, psylliumfröskal, raw agave sirap.</i></p>');
-		$('#surTwo').html('Surdegsbrod');
-		$('#surThree').html('Surdegsbrod');
-		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdegsbrod</p>');
+		$('#surTwo').html('Surdegsbr<img class="dots-colored" id="dots-span" src="img/dots-colored.png"/>od');
+		$('#surThree').html('Surdegsbr<img class="dots-colored" id="dots-span" src="img/dots-colored.png"/>od');
+		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdegsbr<img class="dots-colored" id="dots-slide" src="img/dots-colored.png"/>od</p>');
 		$('.bee').attr('src', 'img/bimedbubbla.jpg')
 		$('#nav-bread').html('').append('BRÖD');
 		$('#nav-contact').html('').append('KONTAKT');
