@@ -141,8 +141,8 @@ $(function() {
 			'<h2>ETT STARKT OCH FIBERRIKT  BROD</h2>'+
 			'<p><i>Ingredinser: bovetemjöl, linfrön, solroskärnor, chiafrön, jäst, ' +
 			'bakpulver, psylliumfröskal, raw agave sirap.</i></p>');
-		$('#surTwo').html('Surdeg');
-		$('#surThree').html('Surdeg');
+		$('#surTwo').html('Surdegsbrod');
+		$('#surThree').html('Surdegsbrod');
 		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdegsbrod</p>');
 		$('.bee').attr('src', 'img/bimedbubbla.jpg')
 		$('#nav-bread').html('').append('BRÖD');
