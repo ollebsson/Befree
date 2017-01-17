@@ -143,7 +143,7 @@ $(function() {
 			'bakpulver, psylliumfröskal, raw agave sirap.</i></p>');
 		$('#surTwo').html('Surdeg');
 		$('#surThree').html('Surdeg');
-		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdeg</p>');
+		$('#sur-lb').html('').append('<p id="sur" class="surdeg lb">Surdegsbrod</p>');
 		$('.bee').attr('src', 'img/bimedbubbla.jpg')
 		$('#nav-bread').html('').append('BRÖD');
 		$('#nav-contact').html('').append('KONTAKT');
