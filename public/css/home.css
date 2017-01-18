@@ -211,19 +211,18 @@ textarea {
 	box-shadow: 11px 10px 14px #bcbcbc !important;
 }
 #modal-inner {
-	top: 50%;
+	/*top: 50%;
     transform: translateY(-50%);
-    position: absolute;
-    background-image: url('../img/bubble7.png');
+    position: absolute;*/
 	background-repeat: no-repeat;
-	background-color: transparent;
+	/*background-color: transparent;*/
 	background-size: contain;
 	text-align: center;
 	padding-top: 10px;
 }
 @media (max-width: 700px) {
 	#modal-inner {
-		background-size: contain;
+		/*background-size: contain;*/
 	}
 }
 .no-padding {

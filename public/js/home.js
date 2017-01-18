@@ -300,15 +300,15 @@ $(function() {
 
 		if(ev.target.id === '1') {
 			console.log(1);
-			// if(viewPort.width < viewPort.height) {
+			if(viewPort.width < viewPort.height) {
 
-				// $('#myModal').modal('toggle');
-			// }
-			// else {
+				$('#myModal').modal('toggle');
+			}
+			else {
 
 				$('#bubble-1').css('z-index', 300).css('display', 'block');
 
-			// }
+			}
 			$('#bee-one').css('display', 'block');
 		}
 		else if(ev.target.id === '2') {
