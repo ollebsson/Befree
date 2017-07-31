@@ -29,6 +29,7 @@ $(function() {
 		}
 
 	}
+
 	function changeNavbarOnScrollTop() {
 		logoSm.style.opacity = 0;
 
@@ -99,12 +100,12 @@ $(function() {
 
 
 		'<p>What does it mean to be naturally gluten-free? ' + 
-' For me, it means that I try to have 0 ppm gluten in my diet. Part of that also means that it is naturally free from gluten and shouldn&#39;t be contaminated  in the process of being made or in any way by the time you consume it. Studies show that they&#39;re many health benefits with eating naturally gluten-free. For me, to call something naturally gluten-free , means that the bread does not contain:</p>' + 
+		' For me, it means that I try to have 0 ppm gluten in my diet.  Part of that also means that it is naturally free from gluten and shouldn’t be contaminated in the process of being made or in any way by the time you consume it. Studies show that they’re many health benefits with eating naturally gluten-free. For me, to call something naturally glutenfree, means that the bread does not contain:</p>' + 
 
 		'<p>Wheat (kamut, spelled, durum, couscous, semolina, farro, bulgur, semolina etc.)' + 
 		'<p>Rye</p>' +
 		'<p>Barley</p>' +
-		'<p>Oat (including so-called "gluten-free")</p>' +
+		'<p>Oat (including "gluten-free")</p>' +
 		'<p>Wheat starch (including so-called "gluten-free")</p>' + 
 		'<p>Glucose syrup (wheat)</p>' +
 		'<p>Glucose, dextrose (wheat)</p>' + 
@@ -149,11 +150,11 @@ $(function() {
 		$('#nav-contact').html('').append('KONTAKT');
 		$('.text-story').html('').append(
 			'<h1>STORY</h1>' + 
-			'<p>Maginfektion efter maginfektion, förkylning på fökyling och ständig svaghet i kropppen. Jag bestämde mig efter en rekommendation av min läkare att testa utesluta gluten ur kosten. Sakta men säkert försvann maginfektioner, förkylningar och svagheten! Det var verkligen en befrielse som jag hoppas fler ska få uppleva</p>' + 
+			'<p>Maginfektion efter maginfektion, förkylning påförkyling och ständig svaghet i kropppen. Jag bestämde mig efter en rekommendation av min läkare att testa utesluta gluten ur kosten. Sakta men säkert försvann maginfektioner, förkylningar och svagheten! Det var verkligen en befrielse som jag hoppas fler ska få uppleva.</p>' + 
 
-			'<p>Snabbt upptäckte jag att det glutenfria bördet som fanns att köpa i butikerna varken var goda eller nyttiga, de innehöll både tillsatser och glutenfri vetestärkelse.</p>' + 
+			'<p>Snabbt upptäckte jag att de glutenfria bröd som fanns att köpa i butikerna varken var goda eller nyttiga, de innehöll både tillsatser och glutenfri vetestärkelse.</p>' + 
 
-			'<p>Mitt stora mat- och hälsointresse växte sig ännu starkare än förr och det var självklart att jag började baka glutenfria bröd från kokböcker för att sen börja experimentera fram mina egna bröd i köket, precis som jag ville de skulle smaka! And here they are!</p>');;
+			'<p>Mitt stora mat- och hälsointresse växte sig ännu starkare än förr och det var självklart att jag skulle börja experimentera fram mina egna bröd i köket, precis som jag ville de skulle smaka! And here they are!</p>');
 		$('.text-bread').html('').append(
 			'<h1>ALL NATURAL GLUTEN-FREE DELICIOUS BREAD</h1>' + 
 			'<p>Genom meditation och yoga har naturen och det naturliga blivit en stor del av mitt liv. Jag vill tillföra det som är till störst nytta för både dig och vår planet. Därför är dessa bröden naturliga och innehåller både antioxdanter, proteiner, vitaminer, mineraler och fibrer som vi behöver för att må bra och leva gott!</p>');
@@ -166,7 +167,7 @@ $(function() {
 
 
 		'<p>Vad innebär naturligt glutenfritt? ' + 
-			'Det innebär för mig att jag strävar efter 0 ppm gluten i kosten. Dels ska det vara naturligt fritt från gluten och inte artificiellt renat från det. Det ska inte vara kontaminerat någonstans på vägen mellan sitt ursprung och din mun. Studier visar att det finns flera hälsovinster med att äta naturligt glutenfritt. För att jag ska kalla någonting naturligt glutenfritt så ska brödet inte innehålla:</p>' + 
+		'Det innebär för mig att jag strävar efter 0 ppm gluten i kosten. Dels ska det vara naturligt fritt från gluten och inte artificiellt renat från det. Det ska inte vara kontaminerat någonstans på vägen mellan sitt ursprung och din mun. Studier visar att det finns flera hälsovinster med att äta naturligt glutenfritt. För att jag ska kalla någonting naturligt glutenfritt så ska brödet inte innehålla:</p>' + 
 
 		'<p>Vete  (kamut, spelt, durum, couscous, semolina, farro, bulgur, mannagryn mm.)' + 
 		'<p>Råg</p>' +

@@ -26,7 +26,7 @@ function handleSayHello(req, res) {
 	});
 	var mailOptions = {
 		from: 'befreeemailservice@gmail.com',
-		to: 'olle_bsson@hotmail.com',
+		to: 'marta.dellanna@outlook.com',
 		subject: 'Test',
 		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' + '<p>' + text + '</p>' 
 	};
@@ -62,8 +62,8 @@ app.get('/', function (req, res) {
 });
 
 
-var server = app.listen(3000, function () {
-	console.log('Server started. Listening to connections on port 3000\n');
+var server = app.listen(8000, function () {
+	console.log('Server started. Listening to connections on port 8000\n');
 });
 
 module.exports = app;
