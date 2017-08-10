@@ -38,9 +38,9 @@ $(function() {
 		navbar.style.backgroundColor = 'transparent';
 		navbar.style.boxShadow = 'none';
 
-		if(viewPort.width > 720) {
-			navbar.style.padding = '85px';
-		}
+		// if(viewPort.width > 720) {
+		// 	navbar.style.padding = '85px';
+		// }
 	}
 
 	function changeNavOnScrollDown() {
@@ -50,9 +50,9 @@ $(function() {
 		navbar.style.backgroundColor = 'white';
 		navbar.style.boxShadow = '0 0 18px -8px #000';
 
-		if(viewPort.width > 720) {
-			navbar.style.padding = '35px';
-		}
+		// if(viewPort.width > 720) {
+		// 	navbar.style.padding = '35px';
+		// }
 	}
 
 	function switchLangToEnglish() {

@@ -24,22 +24,18 @@
 @media (min-width: 768px) {
 
 	#navs {
-
-		transform: translate(-50%);
+		position: absolute;
+		top: 50%;
+		right: 10%;
+		/*margin-right: 10%;*/
+		transform: translate(-10%, -50%);
 
 	}
 	#navs li {
 		top: 50%;
 	}
-	#navbar {
-		/*padding: 85px;*/
-	}
 	.start-left-column {
 		padding-right: 0px;
-	}
-	#logo-small {
-		 top: 50%;
- 		transform: translateY(-50%);
 	}
 	.icons-wrapper {
 		position: absolute;	
@@ -47,11 +43,15 @@
 		top: 50%;
 		transform: translate(-95%,-50%);
 	}
+	.navbar {
+		padding-left: 5%;
+	}
 	.lang-wrapper {
 		position: absolute;
 		top: 15%;
-		left: 94%;
-		transform: translate(-94%, -15%);
+		left: 95%;
+		transform: translate(-95%, -15%);
+		padding-right: 10px;
 	}
 }
 @media (max-width: 544px) {
@@ -79,11 +79,21 @@ h2 {
 	width: 25px;
 }
 .icons-wrapper {
-	width: 70px;
+	padding-right: 9px;
 	float: right;
+}
+
+@media (max-width: 767px) {
+	.lang-wrapper {
+		position: absolute;
+		right: 18%;
+		transform: translateX(-18%);
+		margin-top: 6px;
+	}
 }
 .lang-icon {
 	margin: 3px;
+	margin-top: 0;
 	cursor: pointer;
 }
 
@@ -146,12 +156,6 @@ img {
 	.navbar-brand {
 		width: 80%;
 	}
-	.lang-wrapper {
-		position: absolute;
-		top: 15%;
-		left: 75%;		
-		transform: translate(-75%, -15%);
-	}
 }
 #submit {
 	font-family: helloGoodbye;
@@ -173,8 +177,19 @@ img {
  	border-bottom: none;
  	font-size: 12px;
  	color: black;
+ 	margin-top: -1px;
 
- }
+}
+.navbar-fixed-top {
+	/*padding: 0 !important;*/
+}
+.navbar-brand {
+	height: auto !important;
+	padding: 6px !important;
+}
+.navbar-toggle {
+	margin-right: 9px !important;
+}
 #navbar > li > a {
 	color: black;
 }
