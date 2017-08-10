@@ -54,6 +54,7 @@ $(function() {
 			navbar.style.padding = '35px';
 		}
 	}
+
 	function switchLangToEnglish() {
 			
 		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdeg</span>' +
@@ -242,9 +243,15 @@ $(function() {
 	});
 	window.addEventListener('resize', function (e) {
 		viewPort = {
-				width: $(window).width(),
-				height: $(window).height()
-			};
+			width: $(window).width(),
+			height: $(window).height()
+		};
+		console.log('resize');
+		// if (viewPort.height > viewPort.width) {
+		// 	console.log('hit')
+		// 	console.log($('.bubble'))
+		// 	$('.bubble').css('background-image', 'url(' + 'img/bubble-mobile.png' + ')');
+		// }
 		resizeNavbar();
 	});
 	window.addEventListener('scroll', function (e) {
@@ -263,15 +270,8 @@ $(function() {
 			changeNavOnScrollDown();
 		}
 	});
-	modal.addEventListener('click', function() {
-		$('#myModal').modal('toggle');
-	})	
-	modal2.addEventListener('click', function() {
-		$('#myModal-2').modal('toggle');
-	})
-	modal3.addEventListener('click', function() {
-		$('#myModal-3').modal('toggle');
-	})
+	
+
 	navbar.addEventListener('click', function (ev) {
 		
 		if(ev.target.tagName === 'A' ) {
@@ -297,41 +297,40 @@ $(function() {
 	$('#sur').mouseleave(function() {
 		$('#sur-lb').css('opacity', 0).css('left', '-30%');
 	});
+
 	modalTrigger.addEventListener('click', function	(ev) {
 
 		if(ev.target.id === '1') {
-			console.log(1);
 			if(viewPort.width < viewPort.height) {
 
-				$('#myModal').modal('toggle');
+				// $('#myModal').modal('toggle');
 			}
 			else {
 
 				$('#bubble-1').css('z-index', 300).css('display', 'block');
-
+				$('#bee-one').css('display', 'block');
 			}
-			$('#bee-one').css('display', 'block');
 		}
 		else if(ev.target.id === '2') {
 
-			// if(viewPort.width < viewPort.height) {
-			// 	$('#myModal-2').modal('toggle');
-			// }
-			// else {
+			if(viewPort.width < viewPort.height) {
+				// $('#myModal-2').modal('toggle');
+			}
+			else {
 
 				$('#bubble-2').css('z-index', 300).css('display', 'block');
-			// }
-			$('#bee-two').css('display', 'block');
+				$('#bee-two').css('display', 'block');
+			}
 		}
 		else if(ev.target.id === '3') {
-			// if(viewPort.width < viewPort.height) {
-			// 	$('#myModal-3').modal('toggle');
-			// }
-			// else {
+			if(viewPort.width < viewPort.height) {
+				// $('#myModal-3').modal('toggle');
+			}
+			else {
 
 				$('#bubble-3').css('z-index', 300).css('display', 'block');
-			// }
-			$('#bee-three').css('display', 'block');
+				$('#bee-three').css('display', 'block');
+			}
 		}
 	});
 	eng.addEventListener('click', function () {

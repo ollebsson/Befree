@@ -220,7 +220,11 @@ textarea {
 	text-align: center;
 	padding-top: 10px;
 }
+.tel {
+	text-align: center;
+}
 @media (max-width: 700px) {
+
 	#modal-inner {
 		/*background-size: contain;*/
 	}
@@ -412,9 +416,7 @@ span {
 	top: 50%;
 	transform: translateY(-50%);
 }
-.tel {
-	margin-left: 15px;
-}
+
 .dots-colored {
 	height: 9px;
 	position: absolute;
