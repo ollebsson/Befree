@@ -20,15 +20,16 @@
 }
 
 /*               LOGO            */
-
+body {
+	overflow-x: hidden;
+}
 @media (min-width: 768px) {
 
 	#navs {
 		position: absolute;
 		top: 50%;
-		right: 10%;
-		/*margin-right: 10%;*/
-		transform: translate(-10%, -50%);
+		right: 12%;
+		transform: translate(-12%, -50%);
 
 	}
 	#navs li {
@@ -42,6 +43,7 @@
 		left: 95%;
 		top: 50%;
 		transform: translate(-95%,-50%);
+		width: 76px;
 	}
 	.navbar {
 		padding-left: 5%;
@@ -52,6 +54,17 @@
 		left: 95%;
 		transform: translate(-95%, -15%);
 		padding-right: 10px;
+		width: 76px;
+	}
+}
+@media (max-width: 320px) {
+
+	.modal-bubble h2 {
+		margin-top: 15px !important;
+		margin-bottom: 10px !important;
+	}
+	.modal-bubble #power-paragraph {
+		font-size: 1.4rem;
 	}
 }
 @media (max-width: 544px) {
@@ -96,7 +109,6 @@ h2 {
 	margin-top: 0;
 	cursor: pointer;
 }
-
 img {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
@@ -148,6 +160,18 @@ img {
 }
 @media (min-width: 720px) {
 
+	.modal-bubble p {
+		font-size: 2rem;
+	}
+	.modal-bubble h2 {
+		font-size: 4rem;
+	}
+	.modal-bubble {
+		padding: 6rem !important;
+	}
+	.modal-bubble span {
+		font-size: 7rem;
+	}
 	.info {
 		margin-top: 84px;
 	}
@@ -225,24 +249,26 @@ textarea {
 .input {
 	box-shadow: 11px 10px 14px #bcbcbc !important;
 }
-#modal-inner {
+.modal-bubble {
 	/*top: 50%;
     transform: translateY(-50%);
     position: absolute;*/
+    /*background-position-x: -5px; */
+    top: 15%;
 	background-repeat: no-repeat;
 	/*background-color: transparent;*/
 	background-size: contain;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 49px;
+	height: 100%;
+	font-size: 1.625rem;
+}
+
+.pev {
+	pointer-events: none;
 }
 .tel {
 	text-align: center;
-}
-@media (max-width: 700px) {
-
-	#modal-inner {
-		/*background-size: contain;*/
-	}
 }
 .no-padding {
 	padding-left: 0px !important;
@@ -339,7 +365,7 @@ span {
 	margin-top: 8%;
 }
 .bubble-wrapper {
-	position: relative;
+	position: absolute;
 	z-index: -200;
 }
 #bubble-1 {
@@ -350,14 +376,14 @@ span {
 }
 #bubble-2 {
 	display: none;
-	left: 20%;
+	/*left: 20%;*/
 }
 #bubble-3 {
 	display: none;
-	left: 55%;
+	/*left: 55%;*/
 }
 .bubble {
-	position: absolute !important;
+	position: relative !important;
 	text-align: center;
 	background-size: cover;
 	top: 6%;
@@ -380,7 +406,7 @@ span {
 	margin-bottom: 10px !important;
 }
 #super-text {
-	padding-left: 62px;
+	padding-left: 56px;
 	padding-right: 36px;
 }
 #super-paragraph {

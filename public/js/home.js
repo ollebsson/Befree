@@ -1,6 +1,7 @@
 $(function() {
 
 	var modalTrigger = document.getElementById('brod');
+	var modalWrapper = document.getElementById('modal-wrapper');
 	var logo = document.getElementById('logo');
 	var logoSm = document.getElementById('logo-small');
 	var navbar = document.getElementById('navbar');
@@ -9,7 +10,7 @@ $(function() {
 	var navbarBrand = document.getElementById('navbar-brand');
 	var swe = document.getElementById('swe');
 	var eng = document.getElementById('eng');
-	var modal = document.getElementById('myModal');
+	var modal = document.getElementById('myModal-1');
 	var modal2 = document.getElementById('myModal-2');
 	var modal3 = document.getElementById('myModal-3');
 	var viewPort = {
@@ -17,7 +18,12 @@ $(function() {
 		height: $(window).height()
 	};
 
-	
+	if(viewPort.width < viewPort.height && viewPort.width > 700) {
+
+		$('.modal-bubble').css('background-image', 'url(' + 'img/bubble-bee-modal.png' + ')');
+
+	}
+
 	var pos = $('body').scrollTop();
 	function resizeNavbar() {
 
@@ -38,9 +44,6 @@ $(function() {
 		navbar.style.backgroundColor = 'transparent';
 		navbar.style.boxShadow = 'none';
 
-		// if(viewPort.width > 720) {
-		// 	navbar.style.padding = '85px';
-		// }
 	}
 
 	function changeNavOnScrollDown() {
@@ -50,9 +53,6 @@ $(function() {
 		navbar.style.backgroundColor = 'white';
 		navbar.style.boxShadow = '0 0 18px -8px #000';
 
-		// if(viewPort.width > 720) {
-		// 	navbar.style.padding = '35px';
-		// }
 	}
 
 	function switchLangToEnglish() {
@@ -120,6 +120,7 @@ $(function() {
 
 		'<p>Avoiding animal-based products is one way of not supporting the animal industry`s cruelties. Eating vegan also means that you help reduce CO2 emissions. Also, new studies show that there are many positive health benefits to a vegan diet.</p>');
 	}
+
 	resizeNavbar();
 
 	function switchLangToSwedish() {
@@ -278,6 +279,7 @@ $(function() {
 			$('.navbar-collapse').collapse('hide');
 		}	
 	});
+
 	$('#go').mouseover(function() {
 		$('#go-lb').css('left', '2%').css('opacity', 1);
 
@@ -300,43 +302,65 @@ $(function() {
 
 	modalTrigger.addEventListener('click', function	(ev) {
 
+		console.log(ev.target)
 		if(ev.target.id === '1') {
-			if(viewPort.width < viewPort.height) {
+			if(viewPort.width < viewPort.height || viewPort.height < 400) {
 
-				// $('#myModal').modal('toggle');
+				$('#myModal-1').modal('toggle');
 			}
 			else {
 
 				$('#bubble-1').css('z-index', 300).css('display', 'block');
-				$('#bee-one').css('display', 'block');
 			}
 		}
 		else if(ev.target.id === '2') {
 
 			if(viewPort.width < viewPort.height) {
-				// $('#myModal-2').modal('toggle');
+				$('#myModal-2').modal('toggle');
 			}
 			else {
 
 				$('#bubble-2').css('z-index', 300).css('display', 'block');
-				$('#bee-two').css('display', 'block');
 			}
 		}
 		else if(ev.target.id === '3') {
 			if(viewPort.width < viewPort.height) {
-				// $('#myModal-3').modal('toggle');
+				$('#myModal-3').modal('toggle');
 			}
 			else {
 
 				$('#bubble-3').css('z-index', 300).css('display', 'block');
-				$('#bee-three').css('display', 'block');
 			}
 		}
+		else if(ev.target.classList.contains('bread') === true) {
+
+			console.log(ev.target.firstElementChild.id);
+			if(viewPort.width < viewPort.height) {
+
+				var id = '#myModal-' + ev.target.firstElementChild.id;
+				$(id).modal('toggle'); 
+			}
+			else {
+
+				var bubble = '#bubble-' + ev.target.firstElementChild.id;
+				$(bubble).css('z-index', 300).css('display', 'block');
+			}
+
+		}
 	});
+
+	modalWrapper.addEventListener('click', function (ev) {
+		console.log(ev);
+		$('#myModal-1').modal('hide');
+		$('#myModal-2').modal('hide');
+		$('#myModal-3').modal('hide');
+	});
+
 	eng.addEventListener('click', function () {
 		switchLangToEnglish();
 
 	});
+
 	swe.addEventListener('click', function () {
 		switchLangToSwedish();
 
