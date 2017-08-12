@@ -24,9 +24,10 @@ function handleSayHello(req, res) {
 			pass: 'Jd6210Jd6800'
 		}
 	});
+	// marta.dellanna@outlook.com
 	var mailOptions = {
 		from: 'befreeemailservice@gmail.com',
-		to: 'marta.dellanna@outlook.com',
+		to: 'ollebsson2@gmail.com',
 		subject: 'Test',
 		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' + '<p>' + text + '</p>' 
 	};

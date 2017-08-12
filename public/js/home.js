@@ -18,8 +18,7 @@ $(function() {
 		height: $(window).height()
 	};
 
-	if(viewPort.width < viewPort.height && viewPort.width > 700) {
-
+	if ((viewPort.width < viewPort.height && viewPort.width > 700) || viewPort.height < 600 && viewPort.width > viewPort.height) {
 		$('.modal-bubble').css('background-image', 'url(' + 'img/bubble-bee-modal.png' + ')');
 
 	}
@@ -57,7 +56,7 @@ $(function() {
 
 	function switchLangToEnglish() {
 			
-		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdeg</span>' +
+		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored dots-bubble" id="dots-span" src="img/dots-colored.png"/>od</span>' +
 		'<h2>JUICY &amp; MILD FOR YOUR STOMACH</h2>' +
 
 		'<p><i>Ingredients: corn flour, buckwheat flour, psyllium husk, ' + 
@@ -119,13 +118,35 @@ $(function() {
 		'<p><i>Why Vegan?</i></p>' + 
 
 		'<p>Avoiding animal-based products is one way of not supporting the animal industry`s cruelties. Eating vegan also means that you help reduce CO2 emissions. Also, new studies show that there are many positive health benefits to a vegan diet.</p>');
+		$('.modal-go-strong').html('').append(
+			'<span class="gostrong">Go Strong</span>' +
+			'<h2 style="margin-bottom: 10px;">A STRONG BREAD RICH WITH FIBER &amp; OMEGA-3</h2>' +
+			'<p><i>Ingredients: buckwheat flour, linseed, sunflower seeds, chia seeds, yeast, ' +
+			'baking powder, psyllium seed husk, salt, raw agave nectar' + 
+			'.</i></p>'
+		);
+		$('.modal-powerfruit').html('').append(
+			'<span class="superfruit">Powerfruit</span>' +
+			'<h2>RICH IN ANTIOXIDANTS, ACAI, <wbr> BERRIES &amp; CINNAMON</h2>' + 
+			'<p id="power-paragraph"><i>Ingredients: corn flour, buckwheat flour, psyllium seed husks,' + 
+			'cassava flour, raw agave nectar, unsweetened dried apricots, ' +
+			'pumpkin seeds, cinnamon, salt, ' +
+			'yeast, gluten-free sourdough powder made out of rice flour, acai-powder.</i></p>'
+		);
+		$('.modal-sour').html('').append(
+			'<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored dots-bubble" id="dots-span" src="img/dots-colored.png"/>od</span>' + 
+			'<h2>JUICY &amp; MILD FOR YOUR STOMACH</h2>' +
+			'<p><i>Ingredients: corn flour, buckwheat flour, psyllium husk, ' + 
+			'cassava flour, raw agave nectar, salt, gluten-free sourdough powder made out of rice flour, ' + 
+			' yeast.</i></p>'
+		);
 	}
 
 	resizeNavbar();
 
 	function switchLangToSwedish() {
 
-		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored" id="dots-span" src="img/dots-colored.png"/>od</span>' +
+		$('.text-sour').html('').append('<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored" src="img/dots-colored.png"/>od</span>' +
 		'<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>' +
 
 		'<p><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal, ' +
@@ -187,7 +208,29 @@ $(function() {
 		'<p><i>Varför Vegan?</i></p>' + 
 
 		'<p>Att undvika animaliska produkter är ett sätt att undvika att stödja djurindustrins grymheter. Att äta veganskt innebär också att man bidrar till minskade koldioxid-utsläpp. Dessutom visar nya studier att det finns flera positiva hälsoskäll till en vegansk kosthållning.</p>');
+		$('.modal-go-strong').html('').append(
+			'<span class="gostrong">Go Strong</span>' +
+			'<h2 style="margin-bottom: 10px;">Protein och fiberrikt</h2>' +
+			'<p><i>Ingredienser: bovetemjöl, linfrön, solroskärnor, chiafrön, jäst, ' +
+			'bakpulver, psylliumfröskal, raw agave sirap' +
+			'</i></p>'
+		);
+		$('.modal-powerfruit').html('').append(
+			'<span class="superfruit">Powerfruit</span>' +
+			'<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>' +
+			'<p id="power-paragraph"><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal, ' +
+			'cassavamjöl, raw agave sirap, torkade osötade aprikoser, ' +
+			'pumpakärnor, kanel, salt, ' +
+			'glutenfritt surdegspulver på rismjöl, jäst, acaipulver</i></p>'
+		);
+		$('.modal-sour').html('').append(
+			'<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored dots-bubble" id="dots-span" src="img/dots-colored.png"/>od</span>' + 
+			'<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>' +
 
+			'<p><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal, ' +
+			'cassavamjöl, raw agave sirap, salt, glutenfritt surdegspulver på rismjöl, ' + 
+			'jäst.</i></p>'
+		);
 	}
 
 	$('#contact-form').submit(function (e) {
@@ -227,32 +270,28 @@ $(function() {
 
 	var navBtnVis;
 	var menuDown;
+	var bubbleOne = document.getElementById('bubble-1');
+	var bubbleTwo = document.getElementById('bubble-2');
+	var bubbleThree = document.getElementById('bubble-3');
 	window.addEventListener('click', function(e) {
-		if(e.target.id !== '1') {
 
-			$('#bubble-1').css('z-index', 0).css('display', 'none');
+		if ((bubbleOne.classList.contains('hidden') === false || bubbleTwo.classList.contains('hidden') === false || bubbleThree.classList.contains('hidden') === false) && e.target.dataset.key === undefined) {
+			bubbleOne.classList.add('hidden');
+			bubbleTwo.classList.add('hidden');
+			bubbleThree.classList.add('hidden');
 		}
-		if(e.target.id !== '2') {
-
-			$('#bubble-2').css('z-index', 0).css('display', 'none');
-		}		
-		if(e.target.id !== '3') {
-
-			$('#bubble-3').css('z-index', 0).css('display', 'none');
-		}
-
 	});
 	window.addEventListener('resize', function (e) {
 		viewPort = {
 			width: $(window).width(),
 			height: $(window).height()
 		};
-		console.log('resize');
-		// if (viewPort.height > viewPort.width) {
-		// 	console.log('hit')
-		// 	console.log($('.bubble'))
-		// 	$('.bubble').css('background-image', 'url(' + 'img/bubble-mobile.png' + ')');
-		// }
+
+		if ((viewPort.width < viewPort.height && viewPort.width > 700) || viewPort.height < 600 && viewPort.width > viewPort.height) {
+			$('.modal-bubble').css('background-image', 'url(' + 'img/bubble-bee-modal.png' + ')');
+
+		}
+		
 		resizeNavbar();
 	});
 	window.addEventListener('scroll', function (e) {
@@ -301,51 +340,15 @@ $(function() {
 	});
 
 	modalTrigger.addEventListener('click', function	(ev) {
+	
+		if((viewPort.width < viewPort.height) || viewPort.height < 500) {
 
-		console.log(ev.target)
-		if(ev.target.id === '1') {
-			if(viewPort.width < viewPort.height || viewPort.height < 400) {
-
-				$('#myModal-1').modal('toggle');
-			}
-			else {
-
-				$('#bubble-1').css('z-index', 300).css('display', 'block');
-			}
+			$('#myModal-'+ ev.target.dataset.key).modal('toggle');
 		}
-		else if(ev.target.id === '2') {
-
-			if(viewPort.width < viewPort.height) {
-				$('#myModal-2').modal('toggle');
-			}
-			else {
-
-				$('#bubble-2').css('z-index', 300).css('display', 'block');
-			}
-		}
-		else if(ev.target.id === '3') {
-			if(viewPort.width < viewPort.height) {
-				$('#myModal-3').modal('toggle');
-			}
-			else {
-
-				$('#bubble-3').css('z-index', 300).css('display', 'block');
-			}
-		}
-		else if(ev.target.classList.contains('bread') === true) {
-
-			console.log(ev.target.firstElementChild.id);
-			if(viewPort.width < viewPort.height) {
-
-				var id = '#myModal-' + ev.target.firstElementChild.id;
-				$(id).modal('toggle'); 
-			}
-			else {
-
-				var bubble = '#bubble-' + ev.target.firstElementChild.id;
-				$(bubble).css('z-index', 300).css('display', 'block');
-			}
-
+		else {
+			var target = 'bubble-' + ev.target.dataset.key;
+			var bubble = document.getElementById(target);
+			bubble.classList.toggle('hidden');
 		}
 	});
 

@@ -27,8 +27,8 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  	</button>
-		  	<a class="navbar-brand" id="navbar-brand" href="#home">
-		  		<img id='logo-small' src="/img/loggaUtanBi.png" class="logo-small"/>
+		  	<a class="navbar-brand" id="navbar-brand">
+		  		<img id='logo-small' src="/img/loggaUtanBi.png" href="#home" class="logo-small"/>
 		 	</a>
 			<div class="lang-wrapper">
 				<img class="lang-icon" id="swe" src="img/sv-icon.png"/><img class="lang-icon" id="eng" src="img/eng-icon.png"/>
@@ -41,7 +41,7 @@
 		<div class="collapse navbar-collapse" id="navbar-collapse">
 		  <ul class="nav navbar-nav navbar-right" id="navs">
 			<li class="active"><a href="#story">STORY<span class="sr-only">(current)</span></a></li>
-			<li><a id="nav-bread" href="#brod">BRÖD</a></li>
+			<li><a id="nav-bread" href="#bread">BRÖD</a></li>
 			<li><a href="#vision">VISION</a></li>
 			<li><a href="#ask">FAQ</a></li>
 			<li><a id="nav-contact" href="#kontakt">KONTAKT</a></li>
@@ -70,7 +70,7 @@
 </div>
 <div class="container column" id="home">
 	<div class="row">
-		<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="col-xs-12 col-sm-8 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1 col-sm-offset-3">
 			<img id="home-cover" class="col-xs-12 col-sm-10 col-sm-offset-1 hidden-xs home-cover" src="img/home.jpg"/>
 		</div>
 	</div>
@@ -88,7 +88,11 @@
 		<div class="col-md-10 col-md-offset-2">
 
 			<div class="row">
-					<img class="col-xs-12 col-md-4" src="img/startleftcol.jpg"/>
+
+					<img class="col-xs-6 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4" src="img/startleftcol.jpg"/>
+					<div class="col-xs-6 hidden-sm">
+						<img style="padding-top: 45%;" class="col-xs-12" src="img/home.jpg"/>
+					</div>					
 					<div class="col-xs-12 col-sm-8">
 						<div class="row">
 
@@ -113,7 +117,7 @@
 								</div>
 
 							</div>
-							<div class="col-xs-12 hidden-md hidden-lg">
+							<div class="col-xs-12 col-sm-offset-3 hidden-md hidden-lg">
 								<img id="breads" src="img/breads.png"/>
 							</div>
 
@@ -153,7 +157,7 @@
 			experimentera fram mina egna bröd i köket, precis som
 			jag ville de skulle smaka! And here they are!</p>
 		</div>
-		<div class="col-xs-10 col-sm-4 col-sm-offset-1 col-xs-offset-1">
+		<div class="col-xs-8 col-sm-4 col-sm-offset-1 col-xs-offset-2">
 			<img class="image img-rounded col-xs-12 effect2" src="img/1846.jpg">
 		</div>
 	</div>
@@ -164,7 +168,7 @@
 							<!--                             BRÖD                               -->
 
 
-<div class="container paragraph" id="brod">
+<div class="container paragraph" id="bread">
 
 	<div class="row bread-divider">
 		<div class="col-sm-5 text-bread">
@@ -179,10 +183,10 @@
 			<img class="col-xs-12 img-rounded image" src="img/raVaror.jpg"/>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row" id="brod">
 
-		<div class="bubble-wrapper invisible-xs" id="bubble-1">
-			<div class="col-sm-10 col-md-offset-1 bubble" role="document" style="background-image:url('img/bubble-rest.png'); height: 450px; opacity: 0.8;">
+		<div class="bubble-wrapper hidden invisible-xs" data-key="1" id="bubble-1">
+			<div class="col-sm-10 col-md-offset-1 bubble pev" role="document" style="background-image:url('img/bubble-rest.png'); height: 450px; opacity: 0.8;">
 				<div class="col-sm-10 col-sm-offset-2 bubble-text text-strong">
 					<span class="gostrong">Go Strong</span>
 					<h2>Protein och fiberrikt</h2>
@@ -193,19 +197,19 @@
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-4 bread">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 bread" data-key="1">
 
-			<img id="1" class="col-xs-11 col-sm-12" src="img/brod1.jpg"/>
-			<img class="col-xs-8 col-xs-offset-2 shadow pev" src="img/shadow5.png">
-			<div class="col-xs-10 col-sm-8 col-xs-offset-2 col-sm-offset-2 pev">
+			<img id="1" class="pev" src="img/brod1.png"/>
+			<img class="col-xs-8 col-xs-offset-1 col-sm-offset-2 shadow pev" src="img/shadow5.png">
+			<div class="col-xs-10 col-sm-8 col-xs-offset-2 col-sm-offset-1 col-md-offset-3 pev">
 
 				<span class="gostrong ">Go Strong</span>
 
 			</div>
 		</div>
 
-		<div class="bubble-wrapper invisible-xs" id="bubble-2">
-			<div class="col-sm-8 col-lg-6 bubble" role="document" style="background-image:url('img/bubble-left.png'); height: 466px; opacity: 0.8;">
+		<div class="bubble-wrapper hidden invisible-xs" data-key="2" id="bubble-2">
+			<div class="col-sm-8 col-lg-6 bubble pev" role="document" style="background-image:url('img/bubble-left.png'); height: 466px; opacity: 0.8;">
 				<div id="super-text" class="bubble-text col-sm-offset-1 col-lg-offset-0 col-sm-10 text-super">
 					<span class="superfruit">Powerfruit</span>
 					<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>
@@ -217,21 +221,21 @@
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-4 bread">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 bread" data-key="2">
 
-			<img id="2" class="col-xs-11 col-sm-12" src="img/brod2.jpg"/>
-			<img class="col-xs-8 col-xs-offset-2 shadow pev" src="img/shadow5.png">
-			<div class="col-xs-10 col-sm-8 col-xs-offset-2 col-sm-offset-2 pev">
-				<span class="superfruit">Powerfruit</span>
+			<img id="2" class="pev" src="img/brod2.png"/>
+			<img class="col-xs-8 col-xs-offset-1 col-sm-offset-2 shadow pev" src="img/shadow5.png">
+			<div class="col-xs-10 col-sm-8 col-xs-offset-2 col-sm-offset-1 col-md-offset-3 pev">
+				<span class="superfruit pev">Powerfruit</span>
 
 			</div>
 
 		</div>
 
-		<div class="bubble-wrapper invisible-xs" id="bubble-3">
-			<div class="col-sm-8 col-sm-offset-4 col-lg-offset-6 bubble" role="document" style="background-image:url('img/bubble-left.png'); height: 468px; opacity: 0.8;">
-			<div class="col-sm-9 col-sm-offset-1 col-lg-offset-1 bubble-text text-sour">
-				<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored" id="dots-span" src="img/dots-colored.png"/>od</span>
+		<div class="bubble-wrapper hidden invisible-xs" data-key="3" id="bubble-3">
+			<div class="col-sm-8 col-sm-offset-4 col-lg-offset-6 bubble pev" role="document" style="background-image:url('img/bubble-left.png'); height: 468px; opacity: 0.8;">
+			<div class="col-sm-9 col-sm-offset-1 col-lg-offset-1 bubble-text text-sour pev">
+				<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored dots-bubble" src="img/dots-colored.png"/>od</span>
 				<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>
 				<p><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal,
 				cassavamjöl, raw agave sirap, salt, glutenfritt surdegspulver på rismjöl, jäst</i></p>
@@ -239,12 +243,12 @@
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-4 bread">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 bread" data-key="3"> 
 			
-			<img id="3" class="col-xs-11 col-sm-12" src="img/brod3.jpg"/>
-			<img class="col-xs-8 col-xs-offset-2 shadow pev" src="img/shadow5.png">
+			<img id="3" class="pev" src="img/brod3.png"/>
+			<img class="col-xs-8 col-xs-offset-1 col-sm-offset-2 shadow pev" src="img/shadow5.png">
 
-			<div class="col-xs-10 col-sm-8 col-xs-offset-2 col-sm-offset-2 pev">
+			<div class="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-1 col-md-offset-3 pev">
 				<span id="surThree" class="surdeg">Surdegsbr<img class="dots-colored" src="img/dots-colored.png"/>od</span>		
 
 			</div>
@@ -315,8 +319,8 @@
 			<p>Att undvika animaliska produkter är ett sätt att undvika att stödja djurindustrins grymheter. Att äta veganskt innebär också att man bidrar till minskade koldioxid-utsläpp. Dessutom visar nya studier att det finns flera positiva hälsoskäll till en vegansk kosthållning.</p>
 
 		</div>
-		<img class="col-xs-4  col-sm-offset-2 col-xs-offset-1 img-rounded image purple" src="img/lila.jpg"/>
-		<img class="col-xs-4 col-sm-offset-2 col-xs-offset-2 img-rounded image " src="img/seeds.jpg"/>
+		<img class="col-xs-4  col-sm-offset-1 col-md-offset-2 col-xs-offset-1 img-rounded image purple" src="img/lila.jpg"/>
+		<img class="col-xs-4 col-sm-offset-1 col-md-offset-2 col-xs-offset-2 img-rounded image " src="img/seeds.jpg"/>
 	</div>
 </div>
 
@@ -329,7 +333,7 @@
 
 	<div class="row">
 
-		<div class="col-sm-10 col-sm-offset-2">
+		<div class="col-sm-10 col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 textarea">
@@ -346,10 +350,10 @@
 						</form>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 info">
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-6 info">
 					<img src="img/logo2.png" class="col-xs-6 col-xs-offset-3"/>
 				</div>
-				<div class="col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-6">
 					<p class="tel">Telefon: 073-9971075</p>
 				</div>
 			</div>
@@ -360,7 +364,7 @@
 <div id="modal-wrapper">
 	<div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 
-		<div id="modal-inner" class="col-xs-12 paragraph modal-bubble" role="document" style="background-image:url('img/bubble-mobile.png');">
+		<div class="col-xs-12 paragraph modal-bubble modal-go-strong" role="document" style="background-image:url('img/bubble-mobile.png');">
 
 			<span class="gostrong">Go Strong</span>
 			<h2 style="margin-bottom: 10px;">Protein och fiberrikt</h2>
@@ -373,11 +377,11 @@
 
 	<div class="modal fade" id="myModal-2" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
 											<!-- Second modal -->
-		<div id="modal-inner" class="col-xs-12 paragraph modal-bubble" role="document" style="background-image:url('img/bubble-mobile.png');">
+		<div class="col-xs-12 paragraph modal-bubble modal-powerfruit" role="document" style="background-image:url('img/bubble-mobile.png');">
 
 			<span class="superfruit">Powerfruit</span>
 			<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>
-			<p id="power-paragraph"><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal,
+			<p ><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal,
 			cassavamjöl, raw agave sirap, torkade osötade aprikoser,
 			pumpakärnor, kanel, salt,
 			glutenfritt surdegspulver på rismjöl, jäst, acaipulver</i></p>
@@ -386,8 +390,8 @@
 	</div>
 	<div class="modal fade" id="myModal-3" tabindex="-3" role="dialog" aria-labelledby="myModalLabel">
 
-		<div id="modal-inner" class="col-xs-12 paragraph modal-bubble" role="document" style="background-image:url('img/bubble-mobile.png');">
-			<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored" id="dots-span" src="img/dots-colored.png"/>od</span>
+		<div class="col-xs-12 paragraph modal-bubble modal-sour" role="document" style="background-image:url('img/bubble-mobile.png');">
+			<span class="surdeg" id="surTwo">Surdegsbr<img class="dots-colored dots-bubble" id="dots-span" src="img/dots-colored.png"/>od</span>
 			<h2>SAFTIGT &amp; MILT MOT DIN MAGE</h2>
 			<p><i>Ingredienser: majsmjöl, bovetemjöl, psylliumfröskal,
 			cassavamjöl, raw agave sirap, salt, glutenfritt surdegspulver på rismjöl, jäst</i></p>
