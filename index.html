@@ -27,15 +27,17 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  	</button>
-		  	<a class="navbar-brand" id="navbar-brand">
-		  		<img id='logo-small' src="/img/loggaUtanBi.png" href="#home" class="logo-small"/>
+		  	<a href="#home" class="navbar-brand" id="navbar-brand">
+		  		<img id='logo-small' src="/img/loggaUtanBi.png" class="logo-small"/>
 		 	</a>
 			<div class="lang-wrapper">
 				<img class="lang-icon" id="swe" src="img/sv-icon.png"/><img class="lang-icon" id="eng" src="img/eng-icon.png"/>
 			</div>
-			<div class="icons-wrapper">
-				<a target="blank" href="https://www.facebook.com/martagofree/"><img class="icons" src="img/fb.jpg"/></a><a target="blank" href="https://www.instagram.com/martagofree/"><img class="icons" src="img/instagram.jpg"/></a>
+			<div class="icons-wrapper" id="sign-up">
+				<img style="cursor: pointer;" class="icons sign-up" src="img/sign-up.png" style="margin-left: 5px;" data-key="modal" /><a style="margin-left: 5px;" target="blank" href="https://www.facebook.com/martagofree/"><img class="icons" src="img/fb.jpg"/></a><a style="margin-left: 5px;" target="blank" href="https://www.instagram.com/martagofree/"><img class="icons" src="img/instagram.jpg"/></a>
+				<label class="sign-up" data-key="modal" style="cursor: pointer" id="news">Nyhetsbrev</label>
 			</div>
+
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="navbar-collapse">
@@ -44,6 +46,7 @@
 			<li><a id="nav-bread" href="#bread">BRÖD</a></li>
 			<li><a href="#vision">VISION</a></li>
 			<li><a href="#ask">FAQ</a></li>
+			<li><a id="nav-courses" href="#courses">KURSER &amp; ANNAT</a></li>
 			<li><a id="nav-contact" href="#kontakt">KONTAKT</a></li>
 		  </ul>
 
@@ -89,15 +92,14 @@
 
 			<div class="row">
 
-					<img class="col-xs-6 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4" src="img/startleftcol.jpg"/>
-					<div class="col-xs-6 hidden-sm">
-						<img style="padding-top: 45%;" class="col-xs-12" src="img/home.jpg"/>
+					<img class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-offset-0 col-md-4" src="img/startleftcol.jpg"/>
+					<div class="col-xs-6 visible-xs">
+						<img style="margin-top: 6.5rem;" class="img-rounded" src="img/home.jpg"/>
 					</div>					
-					<div class="col-xs-12 col-sm-8">
+					<div class="col-xs-12 col-sm-6 col-md-8">
 						<div class="row">
 
-								<!-- <div class="col-xs-2 no-padding labels"> -->
-							<div class="col-xs-12 hidden-xs hidden-sm">
+							<div class="col-xs-12 visible-lg" style="cursor: pointer;">
 								<img class="col-xs-7" id="breads" src="img/breads.jpg"/>
 								<div class="col-xs-6 hover">
 									<div class="anchor" id="go"></div>
@@ -112,13 +114,13 @@
 										<p class="superfruit lb">Powerfruit</p>
 									</div>
 									<div class="col-xs-5 labels" id="sur-lb">
-										<p id="sur" class="surdeg lb">Surdegsbr<img class="dots-colored" id="slide" src="img/dots-colored.png"/>od</p>
+										<p id="sur" class="surdeg lb">Surdegsbr<img class="dots-colored" src="img/dots-colored.png"/>od</p>
 									</div>
 								</div>
 
 							</div>
-							<div class="col-xs-12 col-sm-offset-3 hidden-md hidden-lg">
-								<img id="breads" src="img/breads.png"/>
+							<div style="margin-top: 3rem;" class="col-xs-12 hidden-lg">
+								<img id="breads-mobile" src="img/breads.png"/>
 							</div>
 
 							<!-- </div> -->
@@ -197,10 +199,10 @@
 			</div>
 		</div>
 
-		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 bread" data-key="1">
+		<div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4 bread" data-key="1">
 
 			<img id="1" class="pev" src="img/brod1.png"/>
-			<img class="col-xs-8 col-xs-offset-1 col-sm-offset-2 shadow pev" src="img/shadow5.png">
+			<img class="col-xs-8 col-xs-offset-2 shadow pev" src="img/shadow5.png">
 			<div class="col-xs-10 col-sm-8 col-xs-offset-2 col-sm-offset-1 col-md-offset-3 pev">
 
 				<span class="gostrong ">Go Strong</span>
@@ -221,10 +223,10 @@
 			</div>
 		</div>
 
-		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 bread" data-key="2">
+		<div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4 bread" data-key="2">
 
 			<img id="2" class="pev" src="img/brod2.png"/>
-			<img class="col-xs-8 col-xs-offset-1 col-sm-offset-2 shadow pev" src="img/shadow5.png">
+			<img class="col-xs-8 col-xs-offset-2 shadow pev" src="img/shadow5.png">
 			<div class="col-xs-10 col-sm-8 col-xs-offset-2 col-sm-offset-1 col-md-offset-3 pev">
 				<span class="superfruit pev">Powerfruit</span>
 
@@ -243,12 +245,12 @@
 			</div>
 		</div>
 
-		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 bread" data-key="3"> 
+		<div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4 bread" data-key="3"> 
 			
 			<img id="3" class="pev" src="img/brod3.png"/>
-			<img class="col-xs-8 col-xs-offset-1 col-sm-offset-2 shadow pev" src="img/shadow5.png">
+			<img class="col-xs-8 col-xs-offset-2 shadow pev" src="img/shadow5.png">
 
-			<div class="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-1 col-md-offset-3 pev">
+			<div class="col-xs-12 col-sm-8 col-xs-offset-1 col-sm-offset-1 col-md-offset-3 pev">
 				<span id="surThree" class="surdeg">Surdegsbr<img class="dots-colored" src="img/dots-colored.png"/>od</span>		
 
 			</div>
@@ -269,7 +271,9 @@
 						
 					<div class="text-vision"><p>Jag vill baka bröd som alla ska kunna äta, må bra och njuta av! Därför är mina bröd fria från allergener, gluten, tillsatser och animaliska produkter etc. Bröden är till för alla som vill leva sunt och ändå äta gott!</p>
 
-						
+					<p>Jag vill välkomna er till min värld av Natural Clean Food
+					som kropp och sinne mår bra av och är fantastiskt gott!</p>
+
 					</div>
 				</div>
 				<img class="col-xs-12 col-sm-8 bee" src="img/bimedbubbla.jpg"/>
@@ -326,6 +330,205 @@
 
 
 
+				<!--	                               KURSER OCH ANNAT                           -->
+
+<div class="container paragraph" id="courses">
+	<div class="row">
+		<div class="col-xs-12 col-sm-8">
+			<div class="row">
+				<div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-4">
+					<img class="" src="img/marta.png"/>
+				</div>
+			</div>
+
+			<h1>COURSES FOR A HEALTHY LIFE</h1>
+
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<img style="margin-bottom: 2.5rem; margin-top: 0.5rem;" class="img-rounded image visible-xs" src="img/victor.jpg">
+				</div>
+			</div>
+
+			<p>Lär er skapa mat med kärlek och omtanke för er själva och vår
+			planet. Jag utesluter gluten, halvfabrikat, raffinerat socker och
+			animaliskaprodukter. Mat och välbefinnande är ett och jag vill
+			inspirera er att äta riktigt bra på ett lustfyllt och okomplicerat vis.</p>
+
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<img style="margin-bottom: 2.5rem; margin-top: 0.5rem;" class="img-rounded image visible-xs" src="img/IMG_1470.JPG">
+				</div>
+			</div>
+
+			<p>Jag anordnar kurser i alltifrån naturligt glutenfri bakning, vegansk
+			matlagning till nyttiga desserter, raw eller tillagat. Kurserna har olika
+			teman t.ex. hälsosam frukost, rawfood glass, chokladtillverkning eller
+			naturligt glutenfri bakning.</p>
+
+			<p>Jag kan anlitas av företag/grupper som vill vara med om en rolig och
+			inspirerande aktivitet tillsammans. Jag är även utbildad yogalärare
+			och håller även i kurser där yoga &amp; mat kombineras.</p>
+
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<img style="margin-bottom: 2.5rem; margin-top: 0.5rem;" class="img-rounded image visible-xs" src="img/finax2.jpg">
+				</div>
+			</div>
+
+			<p>Nästa aktuella kurser som är öppna för alla:</p>
+
+			<img class="fb-anchor" src="img/fb-icon.png"/>
+
+			<p>Om du inte har facebook kontakta mig gärna!</p>
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-1">
+			<img class="img-rounded image hidden-xs" src="img/victor.jpg">
+			<img class="img-rounded image hidden-xs" src="img/IMG_1470.JPG">
+			<img class="img-rounded image hidden-xs" src="img/finax2.jpg">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-8">
+			<div class="row">
+				<div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-4 marta-header">
+					<img src="img/marta.png"/>
+				</div>
+			</div>
+
+			<h1>RECIPES FOR A HEALTHY LIFE</h1>
+
+			<p>Jag utvecklar recept åt tidningar, restauranger, bagerier och
+			företag. Jag kan anlitas för recept, menyer eller helhets koncept för
+			restauranger.</p>
+
+			<p>Som hälsoinspiratör och receptutvecklare är samtliga recept utan
+			gluten, halvfabrikat, raffinerat socker eller animaliska produkter.
+			Samtliga recept har fokus: Gott &amp; nyttigt utan konstigheter!</p>
+
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<img style="margin-bottom: 2.5rem; margin-top: 0.5rem;" class="img-rounded image visible-xs" src="img/IMG_2499.JPG">
+				</div>
+			</div>
+
+			<p>Kontakta mig vid intresse så lägger vi upp det efter era behov.</p>
+
+		</div>
+
+		<div class="col-xs-12 col-sm-4">
+			<img class="img-rounded image yoga hidden-xs" src="img/IMG_2499.JPG">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-8">
+			<div class="row">
+				<div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-4 marta-header">
+					<img src="img/marta.png"/>
+				</div>
+			</div>
+
+			<h1>HEALTHY FOOD FOR EVERYONE</h1>
+
+			<p>Jag hjälper livsmedelsföretag att ta fram de bästa och mest
+			framstående Clean Food produkterna på marknaden, som inspirerar
+			till en mer hälsosamma livsstil. Produkter av hög kvalitet, naturliga,
+			utan tillsatt socker, gluten, glutenfri vetestärkelse, tillsatser, GMO
+			eller animaliska produker. Bra näringsvärde och hälsoegenskaper är
+			ett måste och viktigast av allt är såklart smaken!</p>
+
+			<p>Detta vill jag göra genom att lägga ner min själ i utvecklingen av
+			produterna, enligt mig är det många produkter som utvecklas på en
+			dag och slängs mer eller mindre ihop!</p>
+
+			<p>På följande sida visar jag er hur jag önskar arbeta för att framställa de
+			allra bästa och mest spännande produkterna på marknaden!</p>
+
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<img style="margin-bottom: 2.5rem; margin-top: 0.5rem;" class="img-rounded image visible-xs" src="img/IMG_1348.JPG">
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-3 col-md-offset-1 hidden-xs">
+			<img style="margin-top: 16rem;" class="img-rounded image yoga" src="img/IMG_1348.JPG">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 center" style="margin-top: 2rem;">
+
+			<p><strong>Produktutveckling av nya innovativa hälsoprodukter för bästa resultat</strong></p>
+
+			<p><strong>STEG 1 ANALYS</strong></p>
+
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img src="img/looking-glass.jpg"/>
+				</div>
+			</div>
+
+			<p>Undersökning och analys av produkter inom samma ”kategori” som idag finns på marknaden. Vilka
+			produkter konkurrera vi med? Vad finns det för behov som idag inte uppfylls?</p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img src="img/arrow.png"/>
+				</div>
+			</div>
+			<p><strong>STEG 2 TEST TILLAGNING AV RECEPT</strong></p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img src="img/kock.jpg"/>
+				</div>
+			</div>
+			<p>Testar att tillaga ett antal olika spännande recept som stämmer överens med de behov som produkten
+			behöver förenas med. Man behöver inte tillverka hjulet två gånger! Vilka av dessa recept har potential att
+			vidareutvecklas? Här får gärna Finax vara med och testsmaka samt tycka till i processen. Hur kan man
+			förbättra produkten? addera? extrahera?</p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img src="img/arrow.png"/>
+				</div>
+			</div>
+			<p><strong>STEG 3 UTVECKLING AV PRODUKT</strong></p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img src="img/lamp.png"/>
+				</div>
+			</div>
+			<p>Utveckling av ny innovativ produkt, med fokus på hälsoegenskaper och smak.</p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img src="img/arrow.png"/>
+				</div>
+			</div>
+			<p><strong>STEG 4 STORSKALIG TILLVERKNING/ PRIS/ INGREDIENS ANPASSNING</strong></p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img class="cog" src="img/cog.jpg"/>
+				</div>
+			</div>
+			<p>Anpassning av produkt för att fungera i i storskalig produktion samt kalkylering utav pris till kund.
+			Behöver ingridenser anpassas? Behöver tillverkningsprocess anpassas? Hållbarhet på produkten behöver
+			säkerhetställas.</p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img src="img/arrow.png"/>
+				</div>
+			</div>
+			<p><strong>STEG 5 EN HÄLSOPRODUKT SOM TAR DEJ TILL HIMLEN NÄR DEN FÖRTÄRAS</strong></p>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5 flow-images">
+					<img class="smiley" src="img/happy.png"/>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
 
 				<!-- 									KONTAKT 									-->
 
@@ -339,7 +542,7 @@
 				<div class="col-xs-12 col-sm-6 textarea">
 
 						<h1 class="text-contact">SKRIV TILL MIG!</h1>
-						<form class="form" id="contact-form" method="post" action="/sayHello">
+						<form class="form" id="contact-form" method="post" action="/contact">
 							<div class="form-group">
 								<input type="email" class="form-control input" name="user_email" placeholder="Enter your E-mail here:"/>
 							</div>
@@ -347,7 +550,13 @@
 								<textarea class="form-control" type="text" rows='8' name="user_text" placeholder="Enter a message here:"></textarea>
 							</div>
 							<button class="btn btn-default" id="submit" type="submit">Send</button>
+
+							<span style="font-family: helloGoodbye" id="contact-response">
+
+							</span>
 						</form>
+
+						
 				</div>
 
 				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-6 info">
@@ -399,5 +608,34 @@
 		
 	</div>
 </div>
+
+<div class="container" data-key="modal">
+	<div id="dialog" data-key="modal" class="modal fade center" data-backdrop="false" tabindex="-4" role="dialog" aria-labelledby="myModalLabel">
+		<div class="row" data-key="modal">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 dialog-body" data-key="modal">
+			<img class="closer" src="img/close.png"/>
+				<p data-key="modal" style="font-family: bellCustom;">Enter your email below to subscribe to my newsletter!<p>
+				<div class="row" data-key="modal">
+					<div class="col-xs-10 col-xs-offset-1" data-key="modal">
+						<form class="form" id="newsletter-form" method="post" action="/signUp" data-key="modal">
+							<div class="row" data-key="modal">
+								<div class="input-group" data-key="modal">
+									<input data-key="modal" style="font-family: bellCustom; height: 37px;" type="email" class="form-control input" name="user_email" placeholder="Enter E-mail here:"/>
+									<span data-key="modal" class="input-group-btn">
+
+										<button id="sign-up-btn" data-key="modal" style="font-family: helloGoodbye; height: 37px; font-size: 20px; z-index: 9;" class="btn btn-default" type="submit">Send</button>
+									</span>
+								</div>
+								<span style="font-family: helloGoodbye;" id="sign-up-response">
+
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
 </body>
 </html>

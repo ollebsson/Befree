@@ -6,13 +6,16 @@ $(function() {
 	var logoSm = document.getElementById('logo-small');
 	var navbar = document.getElementById('navbar');
 	var navBtn = document.getElementById('nav-btn');
-	var form = document.getElementById('contact-form');
 	var navbarBrand = document.getElementById('navbar-brand');
 	var swe = document.getElementById('swe');
 	var eng = document.getElementById('eng');
-	var modal = document.getElementById('myModal-1');
-	var modal2 = document.getElementById('myModal-2');
-	var modal3 = document.getElementById('myModal-3');
+	var signUp = document.getElementById('sign-up');
+	var dialog = document.getElementById('dialog');
+
+	var contactForm = document.getElementById('contact-form');
+	var newsletterForm = document.getElementById('newsletter-form');
+
+
 	var viewPort = {
 		width: $(window).width(),
 		height: $(window).height()
@@ -36,6 +39,19 @@ $(function() {
 	}
 
 	function changeNavbarOnScrollTop() {
+
+		if ((viewPort.width < viewPort.height) && viewPort.height < 700) {
+
+			$('.lang-wrapper').css('left', '1rem');
+		}
+		else if (viewPort.width > viewPort.height && viewPort.height > 760) {
+
+			navbar.style.marginTop = '6rem';
+		}
+		else {
+			navbar.style.marginTop = '-1px'
+		}
+
 		logoSm.style.opacity = 0;
 
 		logo.style.opacity = 1;
@@ -46,6 +62,19 @@ $(function() {
 	}
 
 	function changeNavOnScrollDown() {
+
+		if ((viewPort.width < viewPort.height) && viewPort.height < 700) {
+
+			$('.lang-wrapper').css('left', '10rem');
+		}
+		else if (viewPort.width > viewPort.height && viewPort.height > 760) {
+
+			navbar.style.marginTop = '-1px';
+		}
+		else {
+			navbar.style.marginTop = '-1px'
+		}
+
 		logo.style.opacity = 0;
 		logoSm.style.opacity = 1;
 	
@@ -81,6 +110,7 @@ $(function() {
 		$('.bee').attr('src', 'img/bimedbubbla-eng.jpg');
 		$('#nav-bread').html('').append('BREAD');
 		$('#nav-contact').html('').append('CONTACT');
+		$('#nav-courses').html('').append('COURSES & OTHER');
 		$('.text-story').html('').append(
 			'<h1>STORY</h1>' + 
 			'<p>Stomach problem after stomach problem, illness after illness and a continuously weak body. I decided to follow a recommendation from my doctor and tried removing gluten from my diet. Slowly but surely the stomach problems, illnesses and weakness disappeared! It felt like real freedom, the kind of freedom I hope many can experience.</p>' + 
@@ -95,6 +125,7 @@ $(function() {
 			'I want to bake bread that everyone can eat, stay healthy and enjoy! That´s why my bread is free from allergens, gluten, additives and animal products etc. The bread is for everyone who wants to live healthy and still eat well!');
 		$('.text-contact').html('').append(
 			'WRITE TO ME!');
+		$('#breads-mobile').attr('src', 'img/breads-eng.png');
 		$('.text-faq').html('').append(
 			'<h1>FAQ- questions</h1>' +
 
@@ -171,6 +202,7 @@ $(function() {
 		$('.bee').attr('src', 'img/bimedbubbla.jpg')
 		$('#nav-bread').html('').append('BRÖD');
 		$('#nav-contact').html('').append('KONTAKT');
+		$('#nav-courses').html('').append('KURSER OCH ANNAT');
 		$('.text-story').html('').append(
 			'<h1>STORY</h1>' + 
 			'<p>Maginfektion efter maginfektion, förkylning påförkyling och ständig svaghet i kropppen. Jag bestämde mig efter en rekommendation av min läkare att testa utesluta gluten ur kosten. Sakta men säkert försvann maginfektioner, förkylningar och svagheten! Det var verkligen en befrielse som jag hoppas fler ska få uppleva.</p>' + 
@@ -231,21 +263,56 @@ $(function() {
 			'cassavamjöl, raw agave sirap, salt, glutenfritt surdegspulver på rismjöl, ' + 
 			'jäst.</i></p>'
 		);
+		$('#breads-mobile').attr('src', 'img/breads.png');
 	}
 
-	$('#contact-form').submit(function (e) {
+	$('#contact-form').submit( function (e) {
+
+		e.preventDefault();
+		$.ajax({
+		  type: 'post',
+		  url: '/contact',
+		  data: $('#contact-form').serialize(),
+		  success: function () {
+		  	document.getElementById('submit').disabled = true;
+		   	$('#contact-response').empty().append('Message recieved!');
+
+		   	setTimeout(function (){
+		   		document.getElementById('submit').disabled = false;
+		   	}, 3000);
+		  },
+		  error: function () {
+		  	$('#contact-response').empty().append('<p style="color: red;">Something went wrong, please try again!');
+		  }
+		});
+
+	});
+
+	$('#newsletter-form').submit( function (e) {
+
+		e.preventDefault();
 
 		$.ajax({
 		  type: 'post',
-		  url: '/sayHello',
-		  data: $('#contact-form').serialize(),
+		  url: '/signUp',
+		  data: $('#newsletter-form').serialize(),
 		  success: function () {
-		   $('#contact-form').append('<p>Email has been sent!</p>')
+		   $('#sign-up-response').empty().append('Thank you for subscribing!');
+
+		   document.getElementById('sign-up-btn').disabled = true;
+
+		   setTimeout(function (){
+		   	$('#dialog').modal('hide');
+		   }, 2000);
+		   
+		  },
+		  error: function () {
+		  	$('#sign-up-response').empty().append('Something went wrong, please try again!');
 		  }
 		});
-		e.preventDefault();
 
 	});
+
 	var navBefore = $('.navbar-header').css('height');
 	var navHeaderHeight;
 
@@ -257,6 +324,7 @@ $(function() {
 		
 		changeNavOnScrollDown();
 	});
+
 	$('.collapse').on('hide.bs.collapse', function () {
 
 		pos = $('body').scrollTop();
@@ -273,15 +341,22 @@ $(function() {
 	var bubbleOne = document.getElementById('bubble-1');
 	var bubbleTwo = document.getElementById('bubble-2');
 	var bubbleThree = document.getElementById('bubble-3');
+
 	window.addEventListener('click', function(e) {
 
-		if ((bubbleOne.classList.contains('hidden') === false || bubbleTwo.classList.contains('hidden') === false || bubbleThree.classList.contains('hidden') === false) && e.target.dataset.key === undefined) {
+		if ((bubbleOne.classList.contains('hidden') === false || bubbleTwo.classList.contains('hidden') === false || bubbleThree.classList.contains('hidden') === false || dialog.style.display === 'block') && e.target.dataset.key === undefined) {
 			bubbleOne.classList.add('hidden');
 			bubbleTwo.classList.add('hidden');
 			bubbleThree.classList.add('hidden');
+			$('#dialog').modal('hide');
+
 		}
 	});
+
 	window.addEventListener('resize', function (e) {
+
+		pos = $('body').scrollTop();
+
 		viewPort = {
 			width: $(window).width(),
 			height: $(window).height()
@@ -294,6 +369,7 @@ $(function() {
 		
 		resizeNavbar();
 	});
+
 	window.addEventListener('scroll', function (e) {
 		menuDown = $("#navbar-collapse").is(":visible");
 		navBtnVis = $("#nav-btn").is(":visible");
@@ -352,8 +428,16 @@ $(function() {
 		}
 	});
 
+	signUp.addEventListener('click', function (ev) {
+
+		if (ev.target.classList.contains('sign-up') === true) {
+			
+			$('#dialog').modal('toggle');
+		};
+	
+	});
+
 	modalWrapper.addEventListener('click', function (ev) {
-		console.log(ev);
 		$('#myModal-1').modal('hide');
 		$('#myModal-2').modal('hide');
 		$('#myModal-3').modal('hide');

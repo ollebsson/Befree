@@ -10,11 +10,42 @@ var router = express.Router();
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-app.use('/sayHello', router);
+app.use('/', router);
 
-router.post('/', handleSayHello);
+router.post('/contact', sendEmail);
+router.post('/signUp', sendContactRequest);
 
-function handleSayHello(req, res) {
+function sendEmail(req, res) {
+
+	var text = req.body.user_text;
+	var transporter = nodeMailer.createTransport({
+		service: 'Gmail',
+		auth: {
+			user: 'befreeemailservice@gmail.com',
+			pass: '********'
+		}
+	});
+	// marta.dellanna@outlook.com
+	var mailOptions = {
+		from: 'befreeemailservice@gmail.com',
+		to: 'ollebsson2@gmail.com',
+		subject: 'Contact request',
+		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' + '<p>' + text + '</p>' 
+	};
+
+	transporter.sendMail(mailOptions, function(error, info){
+	    if(error){
+	        console.log(error);
+	        res.send(500);
+	    }
+	    else{
+	        console.log('Message sent: ' + info.response);
+	        res.send(200);
+	    };
+	})
+}
+
+function sendContactRequest(req, res) {
 
 	var text = req.body.user_text;
 	var transporter = nodeMailer.createTransport({
@@ -28,16 +59,16 @@ function handleSayHello(req, res) {
 	var mailOptions = {
 		from: 'befreeemailservice@gmail.com',
 		to: 'ollebsson2@gmail.com',
-		subject: 'Test',
-		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' + '<p>' + text + '</p>' 
+		subject: 'Newsletter subscription request',
+		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' 
 	};
 
 	transporter.sendMail(mailOptions, function(error, info){
 	    if(error){
 	        console.log(error);
 	        res.json({yo: 'error'});
-	    }else{
-	        console.log('Message sent: ' + info.response);
+	    }
+	    else{
 	        res.json({yo: info.response});
 	    };
 	})
@@ -57,9 +88,7 @@ function handleSayHello(req, res) {
 
 app.get('/', function (req, res) {
 
-
-		// res.status(200);
-		res.sendFile(__dirname + "/index.html");
+	res.sendFile(__dirname + "/index.html");
 });
 
 
