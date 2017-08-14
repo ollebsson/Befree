@@ -111,6 +111,7 @@ $(function() {
 		$('#nav-bread').html('').append('BREAD');
 		$('#nav-contact').html('').append('CONTACT');
 		$('#nav-courses').html('').append('COURSES & OTHER');
+		$('#news').empty().append('Newsletter');
 		$('.text-story').html('').append(
 			'<h1>STORY</h1>' + 
 			'<p>Stomach problem after stomach problem, illness after illness and a continuously weak body. I decided to follow a recommendation from my doctor and tried removing gluten from my diet. Slowly but surely the stomach problems, illnesses and weakness disappeared! It felt like real freedom, the kind of freedom I hope many can experience.</p>' + 
@@ -156,6 +157,7 @@ $(function() {
 			'baking powder, psyllium seed husk, salt, raw agave nectar' + 
 			'.</i></p>'
 		);
+		$('#news-dialog').empty().append('Enter your email below to subscribe to my newsletter!');
 		$('.modal-powerfruit').html('').append(
 			'<span class="superfruit">Powerfruit</span>' +
 			'<h2>RICH IN ANTIOXIDANTS, ACAI, <wbr> BERRIES &amp; CINNAMON</h2>' + 
@@ -247,6 +249,8 @@ $(function() {
 			'bakpulver, psylliumfröskal, raw agave sirap' +
 			'</i></p>'
 		);
+		$('#news').empty().append('Nyhetsbrev');
+		$('#news-dialog').empty().append('Skriv din email nedan för att prenumerera på mitt nyhetsbrev!');
 		$('.modal-powerfruit').html('').append(
 			'<span class="superfruit">Powerfruit</span>' +
 			'<h2>ANTIOXIDANTRIKT MED ACAI, BERRIES &amp; KANEL</h2>' +

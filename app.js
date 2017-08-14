@@ -25,10 +25,10 @@ function sendEmail(req, res) {
 			pass: '********'
 		}
 	});
-	// marta.dellanna@outlook.com
+	
 	var mailOptions = {
 		from: 'befreeemailservice@gmail.com',
-		to: 'ollebsson2@gmail.com',
+		to: 'marta@martafree.se',
 		subject: 'Contact request',
 		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' + '<p>' + text + '</p>' 
 	};
@@ -52,13 +52,13 @@ function sendContactRequest(req, res) {
 		service: 'Gmail',
 		auth: {
 			user: 'befreeemailservice@gmail.com',
-			pass: 'Jd6210Jd6800'
+			pass: '*****'
 		}
 	});
-	// marta.dellanna@outlook.com
+	// 
 	var mailOptions = {
 		from: 'befreeemailservice@gmail.com',
-		to: 'ollebsson2@gmail.com',
+		to: 'marta@martafree.se',
 		subject: 'Newsletter subscription request',
 		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' 
 	};
@@ -66,7 +66,7 @@ function sendContactRequest(req, res) {
 	transporter.sendMail(mailOptions, function(error, info){
 	    if(error){
 	        console.log(error);
-	        res.json({yo: 'error'});
+	        res.json({error: 'error'});
 	    }
 	    else{
 	        res.json({yo: info.response});

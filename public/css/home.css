@@ -563,3 +563,7 @@ span {
 	margin-top: -2.65rem;
 	cursor: pointer;
 }
+.portrait-mobile {
+	position: absolute;
+	width: 20rem;
+}
