@@ -43,6 +43,7 @@ $(function() {
 		if ((viewPort.width < viewPort.height) && viewPort.height < 700) {
 
 			$('.lang-wrapper').css('left', '1rem');
+			$('#news').css('display', 'none');
 		}
 		else if (viewPort.width > viewPort.height && viewPort.height > 760) {
 
@@ -66,6 +67,7 @@ $(function() {
 		if ((viewPort.width < viewPort.height) && viewPort.height < 700) {
 
 			$('.lang-wrapper').css('left', '10rem');
+			$('#news').css('display', 'inline');
 		}
 		else if (viewPort.width > viewPort.height && viewPort.height > 760) {
 
