@@ -17,18 +17,20 @@ $(function() {
 
 
 	var viewPort = {
+
 		width: $(window).width(),
 		height: $(window).height()
 	};
 
 	if ((viewPort.width < viewPort.height && viewPort.width > 700) || viewPort.height < 600 && viewPort.width > viewPort.height) {
+
 		$('.modal-bubble').css('background-image', 'url(' + 'img/bubble-bee-modal.png' + ')');
 
 	}
 
-	var pos = $('body').scrollTop();
+	var pos = $(window).scrollTop();
 	function resizeNavbar() {
-
+		
 		if(pos < 10) {
 			changeNavbarOnScrollTop();
 		}
@@ -56,6 +58,9 @@ $(function() {
 		logoSm.style.opacity = 0;
 
 		logo.style.opacity = 1;
+		
+		navbar.classList.add('top');
+		navbar.classList.remove('down');
 
 		navbar.style.backgroundColor = 'transparent';
 		navbar.style.boxShadow = 'none';
@@ -79,6 +84,9 @@ $(function() {
 
 		logo.style.opacity = 0;
 		logoSm.style.opacity = 1;
+		
+		navbar.classList.add('down');
+		navbar.classList.remove('top');
 	
 		navbar.style.backgroundColor = 'white';
 		navbar.style.boxShadow = '0 0 18px -8px #000';
@@ -333,7 +341,7 @@ $(function() {
 
 	$('.collapse').on('hide.bs.collapse', function () {
 
-		pos = $('body').scrollTop();
+		pos = $(window).scrollTop();
 
 		$('.navbar-header').css('height', navBefore);
 
@@ -361,7 +369,7 @@ $(function() {
 
 	window.addEventListener('resize', function (e) {
 
-		pos = $('body').scrollTop();
+		pos = $(window).scrollTop();
 
 		viewPort = {
 			width: $(window).width(),
@@ -379,16 +387,16 @@ $(function() {
 	window.addEventListener('scroll', function (e) {
 		menuDown = $("#navbar-collapse").is(":visible");
 		navBtnVis = $("#nav-btn").is(":visible");
-		pos = $('body').scrollTop();
-
-		if(pos < 10 && !navBtnVis) {
+		pos = $(window).scrollTop();
+		console.log(pos)
+		if(pos < 10 && !navBtnVis && navbar.classList.contains('top') === false) {
 			changeNavbarOnScrollTop();
 
 		}
-		else if(pos < 10 && navBtnVis && menuDown === false) {
+		else if(pos < 10 && navBtnVis && menuDown === false && navbar.classList.contains('top') === false) {
 			changeNavbarOnScrollTop();
 		}
-		else {
+		else if (pos > 10 && navbar.classList.contains('down') === false) {
 			changeNavOnScrollDown();
 		}
 	});

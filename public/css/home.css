@@ -200,11 +200,6 @@ img {
 .home-cover {
 	margin-top: -170px;
 }
-@media (max-width: 1400px) {
-	.home-cover {
-		margin-left: 100px !important;
-	}
-}
 @media (min-width: 720px) {
 
 	.modal-bubble p {

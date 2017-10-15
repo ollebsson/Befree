@@ -30,7 +30,7 @@ function sendEmail(req, res) {
 		from: 'befreeemailservice@gmail.com',
 		to: 'marta@martafree.se',
 		subject: 'Contact request',
-		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' + '<p>' + text + '</p>' 
+		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' + '<p>' + text + '</p>'
 	};
 
 	transporter.sendMail(mailOptions, function(error, info){
@@ -52,15 +52,15 @@ function sendContactRequest(req, res) {
 		service: 'Gmail',
 		auth: {
 			user: 'befreeemailservice@gmail.com',
-			pass: '*****'
+			pass: 'Jd6210Jd6800'
 		}
 	});
-	// 
+	//
 	var mailOptions = {
 		from: 'befreeemailservice@gmail.com',
 		to: 'marta@martafree.se',
 		subject: 'Newsletter subscription request',
-		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>' 
+		html:  '<a href="mailto:' + req.body.user_email + '">' + req.body.user_email + '</a>'
 	};
 
 	transporter.sendMail(mailOptions, function(error, info){
