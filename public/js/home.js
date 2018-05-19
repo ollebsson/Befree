@@ -49,7 +49,7 @@ $(function() {
 		}
 		else if (viewPort.width > viewPort.height && viewPort.height > 760) {
 
-			navbar.style.marginTop = '6rem';
+			navbar.style.marginTop = '4rem';
 		}
 		else {
 			navbar.style.marginTop = '-1px'
